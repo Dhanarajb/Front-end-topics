@@ -143,4 +143,57 @@ d. Compiler
 
 🍄 Build a Promise from Scratch
 
+# Build Projects 💡
+
+You’ll not realize, but you’ll learn a ton of things important for Interviews. Here’s what:
+
+# 1️⃣ Core JS
+
+• Closures
+• Lexical Scope
+• ‘this’ keyword
+• Everything’s a Object
+• Hoisting - Function, Variables
+
+# 2️⃣ Async JS
+
+• Promises, Callbacks
+• Microtask, Callback queue
+• Async race conditions
+• Event loop, Execution stack
+
+# 3️⃣ DOM JS
+
+• Events - Delegation, Phases
+• Complex Element querying
+• Rate limiting - Debounce, Throttle
+• Network requests race conditions
+• Storage - Local, Session
+
+# 4️⃣ Modern JS (used in React)
+
+• Pure functions
+• Objects manipulation
+• Mutations, Side effects
+• Higher order functions
+• ES6 - Arrow function, rest, spread,..
+
+# 5️⃣ DSA in JS
+
+(Used in my course project, Google Sheet 2.0)
+
+• Graph Data Structures
+• Creating Directed Graph - Nodes, Edges
+• Stacks Data Structures
+• Infix evaluation Algorithm
+• Cycle Detection Algorithm
+• DFS for cyclic Path tracing
+
+# 6️⃣ Outcomes of this approach
+
+• Solve Fast
+• Hands-on of all concepts
+• Projects ready for resume
+• Interview ready
+
 
