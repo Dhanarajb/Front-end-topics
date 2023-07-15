@@ -91,3 +91,56 @@ d. Compiler
 17. Mocking Data
 18. Understanding Webpack (Bundler)
 19. Babel, env, prettier, linter
+
+# DSA questions
+🍄 How does JS "this" works in different scenarios?
+
+🍄 {a:{b:{c:1},d:2}} becomes {“abc”: 1, “abd”: 2}
+
+🍄 Rotate a matrix 90 degrees
+
+🍄 Remove duplicate element in an array
+
+🍄 Promises ( polyfill of Promise all, race, allSettle )
+
+🍄 Currying with example
+
+🍄 String.prototype.repeat
+
+🍄 LRU Cache
+
+🍄 Implement the compose() and pipe() polyfill .
+
+🍄 Design patterns like singleton, factory patterns etc
+
+🍄 Implement the publisher-subscriber pattern in javascript
+
+🍄 Implement the map, filter, reduce, and for Each polyfill
+
+🍄 Implement the Function.bind, call, apply method on the Function Prototype
+
+🍄 Implement Async. parallel, Async.series which executes a set of async tasks parallel and in series
+
+🍄 Implement Retry API with n number of
+
+🍄 Prototype and prototype inheritance
+
+🍄 How rendering work in the browser
+
+🍄 Event delegation and event propagation in js
+
+🍄 Implement Memoization
+
+🍄 Validate string of parentheses
+
+🍄 Progressive Web application
+
+🍄 Clone an Object
+
+🍄 Debouncing and Throttling
+
+🍄 Implement clearAllTimeout()
+
+🍄 Build a Promise from Scratch
+
+
