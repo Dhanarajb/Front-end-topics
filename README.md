@@ -222,5 +222,34 @@ You’ll not realize, but you’ll learn a ton of things important for Interview
 19. What are controlled and uncontrolled components?
 20. Explain the concept of reconciliation in React.
 
-
+# Product based
+🔹 Understanding Hoisting and its impact on variable and function declarations
+🔹 The differences between let, const, and var in variable declaration and scope
+🔹 Exploring Closures and their practical applications in JavaScript
+🔹 Prototypal Inheritance vs. Classical Inheritance: A comparison of object-oriented paradigms
+🔹 The 'this' keyword in JavaScript and how its value is determined
+🔹 Callbacks, Promises, and Async/Await: Managing asynchronous operations in JavaScript
+🔹 Diving into ES6 features like Arrow functions, Template literals, and Destructuring
+🔹 Exploring Higher-order Functions and their role in functional programming
+🔹 The significance of the Event Loop and Concurrency Model in JavaScript
+🔹 Handling errors and exceptions using try...catch blocks in JavaScript
+🔹 Deep dive into Array methods like map, filter, reduce, and forEach
+🔹 Understanding the concept of Prototypes and how they relate to Objects
+🔹 Scope chain and Lexical Scoping: How JavaScript handles variable access
+🔹 The difference between == and === in JavaScript for value comparison
+🔹 Caching and Memoization techniques for optimizing performance
+🔹 JavaScript Design Patterns for writing efficient and maintainable code
+🔹 Throttling and Debouncing: Controlling the rate of function execution
+🔹 Common array and string manipulation techniques in JavaScript
+🔹 Exploring ES modules and their role in modern JavaScript development
+🔹 Functional vs. Class Components in React: Choosing the right approach
+🔹 JavaScript's new features in ES7, ES8, and beyond
+🔹 DOM manipulation and event handling using Vanilla JavaScript
+🔹 Understanding CORS (Cross-Origin Resource Sharing) and how to handle it
+🔹 Implementing data structures like linked lists, stacks, and queues in JavaScript
+🔹 The importance of Web APIs and how to work with them in JavaScript
+🔹 Unit testing with popular testing frameworks like Jest or Mocha
+🔹 JavaScript bundlers and their role in optimizing code for production
+🔹 Security best practices for JavaScript applications, including XSS and CSRF protection
+🔹 The concept of currying and partial application in functional programming
 
