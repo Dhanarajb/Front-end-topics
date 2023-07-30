@@ -253,3 +253,34 @@ You’ll not realize, but you’ll learn a ton of things important for Interview
 🔹 Security best practices for JavaScript applications, including XSS and CSRF protection
 🔹 The concept of currying and partial application in functional programming
 
+# Generally, I have seen there are 4-5 rounds for most product-based companies.
+
+1. Javascript
+2. Machine Coding / React
+3. DSA
+4. System design
+5. Managerial Round
+
+Let's decode each of these.
+
+🌲 Javascript (around 45-60min)
+👉 html, core concepts of css
+👉 DOM APIs & Web APIs
+👉 conceptual and fundamental based questions
+👉 output, implementation based
+
+🌲 Machine Coding / React (around 60-120min)
+In this round you have to build small UI projects like, start rating, carousel etc.
+
+🌲 DSA
+👉 Dont ignore DSA as it is a game changer. Try to solve easy to medium level questions, frequently asked and hihly voted questions and you are good to go🚀
+
+🌲 System design
+👉 Build architecture for complete application
+👉 Accessibility
+👉 Cross-browser compatibility
+👉 performance
+👉 Build size, Api rate limiting ect
+
+🌲 Managerial Round 
+ Team fit and behavioral behavioral round.
