@@ -142,7 +142,27 @@ d. Compiler
 🍄 Implement clearAllTimeout()
 
 🍄 Build a Promise from Scratch
-
+## 𝐉𝐚𝐯𝐚𝐬𝐜𝐫𝐢𝐩𝐭
+🍄 Promises ( polyfill of Promise all, race, allSettle )
+🍄 Currying with example
+🍄 String.prototype.repeat
+🍄 Implement the compose() and pipe() polyfill .
+🍄 Design patterns like singleton, factory patterns etc
+🍄 Implement the publisher-subscriber pattern in javascript
+🍄 Implement the map, filter, reduce, and for Each polyfill
+🍄 Implement the Function.bind, call, apply method on the Function Prototype
+🍄 Implement Async. parallel, Async.series which executes a set of async tasks parallel and in series
+🍄 Implement Retry API with n number of
+🍄 Prototype and prototype inheritance
+🍄 How rendering work in the browser
+🍄 Event delegation and event propagation in js
+🍄 Implement Memoization
+🍄 Progressive Web application
+🍄 Clone an Object
+🍄 Debouncing and Throttling
+🍄 Implement clearAllTimeout()
+🍄 Build a Promise from Scratch
+🍄 Event Target — addEvent
 # Build Projects 💡
 
 You’ll not realize, but you’ll learn a ton of things important for Interviews. Here’s what:
