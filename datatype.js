@@ -15,6 +15,15 @@ Answer: Type coercion is the automatic conversion of one data type to another du
 
 Explain dynamic typing in JavaScript.
 Answer: Dynamic typing means variables can change their data type during runtime without explicit type declarations.
+        let variable = 5; // A number
+        console.log(typeof variable); // Output: "number"
+
+        variable = "Hello"; // Now a string
+        console.log(typeof variable); // Output: "string"
+
+        variable = true; // Now a boolean
+        console.log(typeof variable); // Output: "boolean"
+
 
 How do you create a string in JavaScript?
 Answer: Strings can be created using single quotes, double quotes, or backticks (template literals).
