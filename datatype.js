@@ -54,6 +54,40 @@ Answer: You can use the typeof operator or the instanceof operator to check data
 
 What is the difference between a deep copy and a shallow copy of an object?
 Answer: A deep copy creates a new object with completely copied values, while a shallow copy creates a new object with references to the original object's values.
+Deep copy
+const original = {
+    name: "John",
+    address: {
+        city: "New York",
+        country: "USA"
+    }
+};
+
+// Deep copy using a function or library (e.g., lodash)
+const deepCopy = JSON.parse(JSON.stringify(original));
+
+// Modifying a nested property in the deep copy doesn't affect the original object
+deepCopy.address.city = "Los Angeles";
+
+console.log(original.address.city);  // Output: "New York"
+
+Shallow copy
+const original = {
+    name: "John",
+    address: {
+        city: "New York",
+        country: "USA"
+    }
+};
+
+// Shallow copy
+const shallowCopy = { ...original };
+
+// Modifying a nested property in the shallow copy affects the original object
+shallowCopy.address.city = "San Francisco";
+
+console.log(original.address.city);  // Output: "San Francisco"
+
 
 What is the NaN property isNaN() used for?
 Answer: The isNaN() function checks if a value is NaN and returns true if the value is NaN, otherwise false.
