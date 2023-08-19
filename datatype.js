@@ -14,6 +14,21 @@ Null
 How do you check the type of a variable in JavaScript?
 Answer: You can use the typeof operator, like typeof variable, to determine the data type of a variable.
 
+let num = 42;
+let str = "Hello, world!";
+let bool = true;
+let obj = {};
+let arr = [];
+let func = function() {};
+
+console.log(typeof num);   // Output: "number"
+console.log(typeof str);   // Output: "string"
+console.log(typeof bool);  // Output: "boolean"
+console.log(typeof obj);   // Output: "object"
+console.log(typeof arr);   // Output: "object"
+console.log(typeof func);  // Output: "function"
+
+
 What is the difference between == and ===?
 Answer: == is the equality operator that performs type coercion, while === is the strict equality operator that checks both value and type without coercion.
 
