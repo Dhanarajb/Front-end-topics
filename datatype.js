@@ -180,11 +180,68 @@ Answer: The isNaN() function checks if a value is NaN and returns true if the va
 What is typecasting in JavaScript?
 Answer: Typecasting is the explicit conversion of one data type to another, often done using functions like parseInt(), parseFloat(), Number(), and String().
 
+        // Implicit type conversion
+let numString = "42"; // This is a string
+let num = numString + 10; // JavaScript performs implicit type conversion to concatenate
+
+console.log(num); // Outputs: "4210" (string concatenation)
+
+// Explicit type conversion (typecasting)
+let numString = "42";
+let num = parseInt(numString); // Parse the string as an integer
+
+console.log(num + 10); // Outputs: 52 (numeric addition)
+
 Explain the concept of truthy and falsy values in JavaScript.
 Answer: In JavaScript, values that are considered false in a boolean context are called falsy values, while values that evaluate to true are truthy. Examples of falsy values include false, 0, null, undefined, NaN, and an empty string.
 
+        if (true) {
+    console.log("true is truthy");
+}
+
+if (false) {
+    // This block will not be executed
+}
+
+if (undefined) {
+    // This block will not be executed
+}
+
+if (null) {
+    // This block will not be executed
+}
+
+if (0) {
+    // This block will not be executed
+}
+
+if (NaN) {
+    // This block will not be executed
+}
+
+if ("") {
+    // This block will not be executed
+}
+
+if ("Hello, world!") {
+    console.log("Non-empty string is truthy");
+}
+
+if (42) {
+    console.log("Number other than 0 is truthy");
+}
+
+if ([]) {
+    console.log("An empty array is truthy");
+}
+
+if ({}) {
+    console.log("An empty object is truthy");
+}
+
 How can you convert a string to a number in JavaScript?
-Answer: You can convert a string to a number using the parseInt() or parseFloat() functions. For example, parseInt("42") would return the number 42.
+Answer: You can convert a string to a number using the parseInt() or parseFloat() functions. 
+        For example, parseInt("42") would return the number 42.
 
 Question: What will be the output of the following code snippet?
 
