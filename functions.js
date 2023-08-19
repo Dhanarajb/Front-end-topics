@@ -1,37 +1,37 @@
 -----------------------------------------------------------------------------------------------------------------
-    Basic Concepts:
+    ## Basic Concepts:
 
 What is a function in JavaScript?
 How do you define a function in JavaScript?
 What is the purpose of parameters in a function?
 How do you call or invoke a function in JavaScript?
 What is a return statement in a function?
-Function Types:
+    
+   ## Function Types:
 6. What is the difference between a named function and an anonymous function?
-
 What is a higher-order function? Can you provide an example?
 Explain the differences between function declarations and function expressions.
 What is an IIFE (Immediately Invoked Function Expression) and why might you use it?
-Scope and Closures:
+    
+   ## Scope and Closures:
 10. What is the scope of a variable declared inside a function?
-
 What is a closure in JavaScript? Provide an example.
 How do closures affect memory management in JavaScript?
-Arrow Functions:
+    
+   ## Arrow Functions:
 13. What are arrow functions? How do they differ from regular functions?
 
 Can you use the this keyword inside an arrow function? Why or why not?
 Callback Functions:
 15. What is a callback function? How is it used in JavaScript?
-
 Explain the concept of the callback hell and how it can be mitigated.
-Function Context:
+    
+   ## Function Context:
 17. What does the this keyword refer to in the context of a function?
-
 How is the value of this determined in a regular function and an arrow function?
-Function Methods:
+    
+   ## Function Methods:
 19. Explain the bind, call, and apply methods in relation to functions.
-
 How can you create a copy of an existing function with a specific context using the bind method?
 These questions cover a range of topics related to functions in JavaScript and can help you 
 assess a candidate's understanding of this crucial concept.
