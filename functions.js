@@ -44,27 +44,23 @@ assess a candidate's understanding of this crucial concept.
 A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 2. How do you define a function in JavaScript?
+the function keyword followed by the function name, a set of parentheses for parameters, 
+    and a pair of curly braces to enclose the function body. 
 
-javascript
-Copy code
 function functionName(parameters) {
     // Function body
 }
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 3. How do you call a function?
 
-javascript
-Copy code
 functionName(arguments);
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 4. What are parameters and arguments in a function?
-Parameters are placeholders in a function's definition, while arguments are the values passed to a function when it's called.
+Parameters are variable names defined in the function's declaration. while arguments are the values passed to a function when it's called.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 5. How can you return a value from a function?
 Use the return statement:
 
-javascript
-Copy code
 function add(a, b) {
     return a + b;
 }
@@ -74,6 +70,28 @@ A callback function is a function passed as an argument to another function, whi
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 7. What is a higher-order function?
 A higher-order function is a function that either takes one or more functions as arguments or returns a function as its result.
+    // Higher-order function
+function operateOnNumbers(x, y, operation) {
+    return operation(x, y);
+}
+// Functions to perform different operations
+function add(a, b) {
+    return a + b;
+}
+function subtract(a, b) {
+    return a - b;
+}
+function multiply(a, b) {
+    return a * b;
+}
+// Using the higher-order function
+let result1 = operateOnNumbers(10, 5, add); // Pass the 'add' function
+console.log(result1); // Outputs: 15
+let result2 = operateOnNumbers(10, 5, subtract); // Pass the 'subtract' function
+console.log(result2); // Outputs: 5
+let result3 = operateOnNumbers(10, 5, multiply); // Pass the 'multiply' function
+console.log(result3); // Outputs: 50
+
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 8. Explain the concept of a "closure".
 A closure is a function that has access to its own scope, the scope of the outer function, and the global scope.
