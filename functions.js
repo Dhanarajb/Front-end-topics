@@ -37,9 +37,6 @@ These questions cover a range of topics related to functions in JavaScript and c
 assess a candidate's understanding of this crucial concept.
 
 ---------------------------------------------------------------------------------------------------------------
-
-
-
 1. What is a function in JavaScript?
 A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
@@ -52,7 +49,6 @@ function functionName(parameters) {
 }
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 3. How do you call a function?
-
 functionName(arguments);
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 4. What are parameters and arguments in a function?
@@ -92,7 +88,7 @@ console.log(result2); // Outputs: 5
 let result3 = operateOnNumbers(10, 5, multiply); // Pass the 'multiply' function
 console.log(result3); // Outputs: 50
 
- When to Use Higher-Order Functions:
+  When to Use Higher-Order Functions:
 
 Modularity and Reusability: Use higher-order functions when you want to create modular and 
     reusable code by encapsulating behaviors in functions that can be easily customized and reused.
@@ -107,7 +103,7 @@ Callbacks: In scenarios where you need to perform asynchronous operations (like 
 Functional Programming: Higher-order functions are a fundamental concept in functional programming. 
             If you're aiming to write more functional code, using higher-order functions can help you achieve that goal.
 
-Why to Use Higher-Order Functions:
+   Why to Use Higher-Order Functions:
 
 Flexibility: Higher-order functions provide a flexible way to customize behavior without altering the core logic of a function.
 
@@ -119,7 +115,7 @@ Code Reusability: Higher-order functions promote code reusability, reducing redu
 Separation of Concerns: They allow you to separate concerns by keeping different aspects of the
     program (e.g., business logic, data manipulation) in separate functions.
 
-How to Use Higher-Order Functions:
+   How to Use Higher-Order Functions:
 
 Define Higher-Order Functions: Start by defining functions that accept other functions as arguments or return functions as results.
 
@@ -144,9 +140,6 @@ Functional Composition: Higher-order functions are the building blocks of functi
 
 Customization in Algorithms: When implementing algorithms with variations, higher-order functions can customize 
                 the algorithm's behavior based on the provided functions.
-
-
-
 
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 8. Explain the concept of a "closure".
