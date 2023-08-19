@@ -2,8 +2,10 @@
 Bare-minimum topics for working on product-based organisation.
 
 # 𝗕𝗮𝘀𝗶𝗰 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀:
+-------------------
 1. Data types
 2. Functions
+-------------------
 3. Scope in JavaScript
 4. Closure
 5. Event loop
