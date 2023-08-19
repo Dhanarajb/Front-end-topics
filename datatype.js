@@ -3,6 +3,13 @@ Answer: The primitive data types in JavaScript are undefined, null, boolean, num
 
 Differentiate between null and undefined.
 Answer: null is an intentional absence of any value and must be assigned, while undefined is the default value of a declared variable that has not been assigned a value.
+Undefined
+        let x;  // x is undefined because it's declared but not assigned a value
+        console.log(x);  // Output: undefined
+Null
+        let y = null;  // y is assigned the value null
+        console.log(y);  // Output: null
+
 
 How do you check the type of a variable in JavaScript?
 Answer: You can use the typeof operator, like typeof variable, to determine the data type of a variable.
