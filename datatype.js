@@ -98,6 +98,24 @@ Answer: A number represents a valid numeric value, while NaN represents an undef
 What is the purpose of the instanceof operator?
 Answer: The instanceof operator checks if an object is an instance of a particular constructor (class).
 
+        // Constructor function for a Person
+function Person(name) {
+    this.name = name;
+}
+
+// Creating instances of the Person constructor
+const person1 = new Person('Alice');
+const person2 = new Person('Bob');
+
+// Checking instances using instanceof
+console.log(person1 instanceof Person);  // Outputs: true
+console.log(person2 instanceof Person);  // Outputs: true
+
+// Creating an object that is not an instance of Person
+const notAPerson = { name: 'Charlie' };
+
+console.log(notAPerson instanceof Person);  // Outputs: false
+
 How do you check if a variable is of a specific data type?
 Answer: You can use the typeof operator or the instanceof operator to check data types. For example, typeof variable === 'number' or variable instanceof Array.
 
