@@ -69,6 +69,23 @@ Answer: Arrays are created using square brackets, like const myArray = [1, 2, 3]
 What are objects in JavaScript?
 Answer: Objects are complex data types that store collections of key-value pairs, where keys are strings (or Symbols) and values can be of any data type, including other objects.
 
+        // Creating an object representing a person
+let person = {
+  firstName: "Dhanaraj",
+  lastName: "bhaskar",
+  age: 30,
+  greet: function() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName}.`);
+  }
+};
+
+// Accessing object properties
+console.log(person.firstName); // Output: Dhanaraj
+console.log(person.age);       // Output: 30
+
+// Calling object method
+person.greet(); // Output: Hello, my name is Dhanaraj bhaskar.
+
 What does the typeof operator return when used with null?
 Answer: The typeof operator returns "object" when used with null, which is a historical quirk in JavaScript.
 
