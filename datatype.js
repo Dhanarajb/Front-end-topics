@@ -51,7 +51,17 @@ How do you create a string in JavaScript?
 Answer: Strings can be created using single quotes, double quotes, or backticks (template literals).
 
 What is the difference between NaN and Infinity?
-Answer: NaN represents an undefined or unrepresentable value resulting from operations, while Infinity represents positive infinity, a value larger than any finite number.
+Answer: NaN represents an undefined value resulting from operations, while Infinity represents positive infinity, a value larger than any finite number.
+NaN
+        let result = 0 / 0; // This operation results in NaN
+        console.log(result); // Output: NaN
+Infinity
+        let positiveInfinity = Infinity;
+        console.log(positiveInfinity); // Output: Infinity
+         console.log(typeof positiveInfinity); // Output: "number"
+
+
+console.log(typeof result); // Output: "number"
 
 How do you create an array in JavaScript?
 Answer: Arrays are created using square brackets, like const myArray = [1, 2, 3];.
