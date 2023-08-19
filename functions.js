@@ -153,6 +153,78 @@ Copy code
 (function() {
     // IIFE body
 })();
+
+When to Use IIFE (Immediately Invoked Function Expression):
+
+IIFE (pronounced "iffy") is a JavaScript design pattern used to execute a function immediately after it's defined. 
+    You might consider using IIFE in the following situations:
+
+Isolation of Scope: IIFE helps create a new scope for variables within the function, preventing variable pollution in the global scope.
+
+Module Pattern: IIFE can be used to create encapsulated modules that expose only the necessary parts to the outside world, 
+    keeping certain variables private.
+
+Avoiding Global Pollution: When you want to avoid creating unnecessary global variables, you can wrap your code in an 
+    IIFE to keep variables local to that function.
+
+Closures and Memory Management: IIFE can help in managing closures and memory by allowing variables to be garbage collected 
+        when they are no longer needed.
+
+Why Use IIFE:
+
+Scope Isolation: IIFE is particularly useful for creating a private scope for variables, which helps prevent conflicts and 
+            unintended side effects with other parts of your code.
+
+Encapsulation: IIFE can be used to achieve encapsulation, allowing you to expose only specific properties or functions to 
+                the outside world while keeping others private.
+
+Namespace Management: IIFE can help you manage namespaces by avoiding polluting the global namespace with unnecessary variables.
+
+How to Use IIFE:
+
+To create an IIFE, you define an anonymous function and then immediately invoke it. The syntax looks like this:
+
+javascript
+Copy code
+(function() {
+    // Your code here
+})();
+You can also pass arguments to the IIFE:
+
+javascript
+Copy code
+(function(arg1, arg2) {
+    // Your code using arg1 and arg2
+})(value1, value2);
+
+Where to Use IIFE:
+
+Immediately Executed Logic: Use IIFE when you have a piece of code that needs to be executed immediately after being defined, 
+    without needing to be reused.
+
+Creating Isolated Environments: IIFE is useful when you want to isolate variables from the surrounding context, 
+    ensuring they don't interfere with other parts of the code.
+
+Asynchronous Code: IIFE can be employed in scenarios where you want to encapsulate asynchronous operations or callbacks.
+
+Here's a simple example of using an IIFE:
+
+javascript
+Copy code
+(function() {
+    var privateVar = "This is private";
+
+    function privateFunction() {
+        console.log(privateVar);
+    }
+
+    privateFunction(); // Outputs: "This is private"
+})();
+
+// privateVar and privateFunction are not accessible here
+In this example, the variables privateVar and privateFunction are encapsulated within the IIFE and are not accessible outside of it. 
+    This helps prevent any unintended interactions with other parts of the code.
+
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 10. How can you create a function using a function constructor?
 
