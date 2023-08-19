@@ -138,6 +138,15 @@ deepCopy.address.city = "Los Angeles";
 
 console.log(original.address.city);  // Output: "New York"
 
+Pros of Deep Copy:
+
+Provides complete isolation between the original and copied objects.
+Changes to copied objects do not affect the original objects and vice versa.
+Cons of Deep Copy:
+
+Slower and more memory-intensive, especially for complex objects with many nested levels.
+May lead to duplication of shared nested objects, which can increase memory usage.
+
 Shallow copy
 const original = {
     name: "John",
@@ -154,6 +163,15 @@ const shallowCopy = { ...original };
 shallowCopy.address.city = "San Francisco";
 
 console.log(original.address.city);  // Output: "San Francisco"
+
+Pros of Shallow Copy:
+
+Faster and less memory-intensive, as it only copies references.
+Preserves references to shared nested objects, which can be desirable in certain scenarios.
+Cons of Shallow Copy:
+
+Changes to nested objects affect the original object and vice versa, which might lead to unexpected behavior.
+It doesn't provide true isolation between the original and copied objects.
 
 
 What is the NaN property isNaN() used for?
