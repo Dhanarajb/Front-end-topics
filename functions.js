@@ -151,6 +151,8 @@ Imagine you have a lunchbox (inner function) that can still hold items from your
     You can take your lunchbox to work and enjoy the food from your kitchen, even though you're not in the kitchen anymore. 
     This connection between your lunchbox and kitchen is what we call a "closure."
 
+Closures enable data encapsulation, information hiding, and the creation of private variables within functions.
+
 Here's a simple example in code:
 
 javascript
