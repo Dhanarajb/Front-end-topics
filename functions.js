@@ -493,8 +493,8 @@ Closure Creation: The createCounter function defines a local variable count and 
 Persistent Data: The inner function keeps a connection to the 'count' number even after the 'createCounter' is done. This makes sure 
     the 'count' stays in memory as long as the inner function can still be used, which is called a closure.
 
-Isolated Scope: The closure encapsulates the count variable within its scope. This prevents the count variable from polluting the global scope, 
-    which is good for avoiding naming conflicts and improving code organization.
+Isolated Scope: The closure keeps the 'count' variable within its own space. This stops the 'count' from messing up the whole program, 
+        which is nice for avoiding naming issues and making the code more organized.
 
 Memory Management Benefit:
 
