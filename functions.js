@@ -246,8 +246,6 @@ Closures enable data encapsulation, information hiding, and the creation of priv
 
 Here's a simple example in code:
 
-javascript
-Copy code
 function outerFunction() {
   var outerVar = "I'm from outside!";
 
@@ -264,8 +262,6 @@ closureExample();  // Output: I'm from outside!
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 1:
 
-javascript
-Copy code
 function outer() {
   var x = 10;
 
@@ -284,8 +280,6 @@ Explanation: The inner function inner() remembers the value of x from its contai
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 2:
 
-javascript
-Copy code
 function counter() {
   var count = 0;
 
@@ -307,8 +301,6 @@ Explanation: The closure maintains the count variable's state between multiple i
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 3:
 
-javascript
-Copy code
 function outer() {
   var name = "Alice";
 
@@ -328,8 +320,6 @@ Explanation: The closure preserves the most recent value of name from its outer 
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 4:
 
-javascript
-Copy code
 for (var i = 1; i <= 3; i++) {
   setTimeout(function() {
     console.log(i);
@@ -346,8 +336,6 @@ Explanation: Due to closure, the anonymous function inside setTimeout retains a 
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 5:
 
-javascript
-Copy code
 function createFunctions() {
   var result = [];
   
@@ -375,8 +363,6 @@ Explanation: The closures inside the result array retain a reference to the same
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 6:
 
-javascript
-Copy code
 function outer(x) {
   return function(y) {
     return x + y;
@@ -391,8 +377,6 @@ Explanation: The inner function forms a closure over the x parameter of the oute
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 7:
 
-javascript
-Copy code
 function outer() {
   var x = 10;
 
@@ -412,8 +396,6 @@ Explanation: The closure retains the updated value of x from its containing oute
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 8:
 
-javascript
-Copy code
 function makeCounter() {
   var count = 0;
 
@@ -438,8 +420,6 @@ Explanation: The closure maintains the state of the count variable across multip
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 9:
 
-javascript
-Copy code
 function greeting(name) {
   return function(message) {
     return "Hello, " + name + "! " + message;
@@ -453,8 +433,6 @@ Explanation: The inner function forms a closure over the name parameter of the o
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 10:
 
-javascript
-Copy code
 function outer() {
   var a = 5;
 
@@ -473,8 +451,6 @@ Explanation: The inner function has access to both a from its containing outer()
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 11:
 
-javascript
-Copy code
 function createMultiplier(factor) {
   return function(number) {
     return factor * number;
@@ -488,8 +464,6 @@ Explanation: The closure captures the factor parameter from the outer function a
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 12:
 
-javascript
-Copy code
 function counter() {
   var count = 0;
 
@@ -510,8 +484,6 @@ Explanation: The closure maintains the count variable's state between multiple i
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 13:
 
-javascript
-Copy code
 function outer() {
   var x = 5;
 
@@ -530,8 +502,6 @@ Explanation: The variable x inside the inner() function is hoisted but not initi
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 14:
 
-javascript
-Copy code
 function countdown() {
   var i;
   for (i = 5; i >= 0; i--) {
@@ -562,8 +532,6 @@ Scenario: Counter Function
 
 Imagine you're creating a counter function that counts the number of times it's called. You decide to use a closure to keep track of the count.
 
-javascript
-Copy code
 function createCounter() {
   var count = 0;
 
@@ -596,8 +564,6 @@ In this case, closures help with memory management by encapsulating data within 
 9. What is an IIFE (Immediately Invoked Function Expression)?
 An IIFE is a function that is defined and immediately executed:
 
-javascript
-Copy code
 (function() {
     // IIFE body
 })();
@@ -632,15 +598,11 @@ How to Use IIFE:
 
 To create an IIFE, you define an anonymous function and then immediately invoke it. The syntax looks like this:
 
-javascript
-Copy code
 (function() {
     // Your code here
 })();
 You can also pass arguments to the IIFE:
 
-javascript
-Copy code
 (function(arg1, arg2) {
     // Your code using arg1 and arg2
 })(value1, value2);
@@ -657,8 +619,6 @@ Asynchronous Code: IIFE can be employed in scenarios where you want to encapsula
 
 Here's a simple example of using an IIFE:
 
-javascript
-Copy code
 (function() {
     var privateVar = "This is private";
 
@@ -704,8 +664,6 @@ console.log(counterModule.getCount()); // Output: 1
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 10. How can you create a function using a function constructor?
 
-javascript
-Copy code
 var multiply = new Function('a', 'b', 'return a * b;');
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 11. What is the difference between function declarations and function expressions?
@@ -721,8 +679,6 @@ Default parameter values allow you to specify default values for function parame
 14. How can you pass a variable number of arguments to a function?
 Use the arguments object (available inside a function) or use the rest parameter syntax:
 
-javascript
-Copy code
 function sum(...numbers) {
     return numbers.reduce((total, num) => total + num, 0);
 }
@@ -757,15 +713,11 @@ super and new.target: Arrow functions do not have bindings for super, arguments,
 Shorter Syntax for Expressions: Arrow functions with a single expression can omit curly braces {} and the return keyword.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 1. What does this arrow function do?
-javascript
-Copy code
 const add = (a, b) => a + b;
 console.log(add(2, 3));
 Answer: The arrow function add takes two parameters and returns their sum. The output will be 5.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 2. How does this arrow function handle object property access?
-javascript
-Copy code
 const person = {
   name: 'Alice',
   greet: () => console.log(`Hello, ${this.name}!`)
@@ -774,47 +726,35 @@ person.greet();
 Answer: Arrow functions do not have their own this. In this case, the output will be Hello, undefined!.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 3. What does this arrow function do with arrays?
-javascript
-Copy code
 const numbers = [1, 2, 3];
 const doubled = numbers.map(x => x * 2);
 console.log(doubled);
 Answer: The arrow function multiplies each element of the numbers array by 2 using the map function. The output will be [2, 4, 6].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 4. How does this arrow function handle default parameter values?
-javascript
-Copy code
 const greet = (name = 'Guest') => console.log(`Hello, ${name}!`);
 greet();         // Output: Hello, Guest!
 greet('Alice');  // Output: Hello, Alice!
 Answer: The arrow function greet uses a default parameter value. When called without arguments, it greets "Guest". When called with an argument, it greets the provided name.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 5. What's the output of this arrow function usage?
-javascript
-Copy code
 const arr = [1, 2, 3];
 const sum = arr.reduce((total, num) => total + num, 0);
 console.log(sum);
 Answer: The arrow function is used with the reduce function to calculate the sum of all elements in the array. The output will be 6.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 6. How does this arrow function handle template literals?
-javascript
-Copy code
 const getName = (first, last) => `Full Name: ${first} ${last}`;
 console.log(getName('John', 'Doe'));
 Answer: The arrow function getName takes two parameters and returns a template literal with the full name. The output will be Full Name: John Doe.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 7. What's the result of this arrow function usage?
-javascript
-Copy code
 const nums = [10, 20, 30];
 const total = nums.reduce((acc, val) => acc + val);
 console.log(total);
 Answer: The arrow function is used with the reduce function to calculate the total sum of elements in the array. The output will be 60.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 8. How does this arrow function handle object method definitions?
-javascript
-Copy code
 const calculator = {
   value: 0,
   add: num => this.value += num
@@ -824,54 +764,40 @@ console.log(calculator.value);
 Answer: Arrow functions do not bind their own this. In this case, the value of this.value will not be updated. The output will be 0.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 9. What's the output of this arrow function usage with a callback?
-javascript
-Copy code
 const items = [1, 2, 3, 4];
 const squared = items.map(item => item * item);
 console.log(squared);
 Answer: The arrow function is used with the map function to calculate the square of each element in the array. The output will be [1, 4, 9, 16].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 10. How does this arrow function handle destructuring?
-javascript
-Copy code
 const greet = ({ name }) => console.log(`Hello, ${name}!`);
 greet({ name: 'Alice' }); // Output: Hello, Alice!
 Answer: The arrow function greet uses destructuring to extract the name property from the provided object and prints a greeting with that name.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 11. What does this arrow function do with filtering?
-javascript
-Copy code
 const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log(evenNumbers);
 Answer: The arrow function is used with the filter function to create an array containing only the even numbers from the numbers array. The output will be [2, 4].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 12. How does this arrow function behave with setTimeout?
-javascript
-Copy code
 const delayedLog = message => setTimeout(() => console.log(message), 1000);
 delayedLog('Hello after 1 second!');
 Answer: The arrow function delayedLog sets up a delayed log using setTimeout. After 1 second, it will log Hello after 1 second!.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 13. What's the output of this arrow function usage with an array?
-javascript
-Copy code
 const numbers = [10, 20, 30];
 const tripled = numbers.map(x => x * 3);
 console.log(tripled);
 Answer: The arrow function multiplies each element of the numbers array by 3 using the map function. The output will be [30, 60, 90].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 14. How does this arrow function handle the toUpperCase method?
-javascript
-Copy code
 const names = ['Alice', 'Bob', 'Charlie'];
 const upperNames = names.map(name => name.toUpperCase());
 console.log(upperNames);
 Answer: The arrow function is used with the map function to convert each name in the names array to uppercase. The output will be ['ALICE', 'BOB', 'CHARLIE'].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 15. What's the behavior of this arrow function with an object?
-javascript
-Copy code
 const person = {
   name: 'Alice',
   greet: () => console.log(`Hello, ${person.name}!`)
@@ -880,43 +806,35 @@ person.greet();
 Answer: Arrow functions do not have their own this. In this case, the output will be Hello, undefined!.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 16. What's the output of this arrow function usage with string manipulation?
-javascript
-Copy code
 const names = ['Alice', 'Bob', 'Charlie'];
 const initials = names.map(name => name[0]);
 console.log(initials);
-Answer: The arrow function extracts the first character from each name in the names array using the map function. The output will be ['A', 'B', 'C'].
+Answer: The arrow function extracts the first character from each name in the names array using the map function. 
+    The output will be ['A', 'B', 'C'].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 17. How does this arrow function handle ternary expressions?
-javascript
-Copy code
 const isEven = num => num % 2 === 0 ? 'Even' : 'Odd';
 console.log(isEven(4)); // Output: Even
 console.log(isEven(7)); // Output: Odd
 Answer: The arrow function uses a ternary expression to determine if a number is even or odd. The output depends on the input number.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 18. What's the result of this arrow function usage with a callback?
-javascript
-Copy code
 const nums = [2, 4, 6, 8];
 const halved = nums.map(num => num / 2);
 console.log(halved);
 Answer: The arrow function is used with the map function to halve each element of the nums array. The output will be [1, 2, 3, 4].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 19. How does this arrow function handle object property shorthand?
-javascript
-Copy code
 const getName = ({ first, last }) => `${first} ${last}`;
 console.log(getName({ first: 'John', last: 'Doe' }));
 Answer: The arrow function uses object property shorthand destructuring to extract first and last properties and returns the full name.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 20. What's the output of this arrow function usage with an array and conditional logic?
-javascript
-Copy code
 const numbers = [5, 10, 15];
 const result = numbers.map(num => num > 10 ? 'High' : 'Low');
 console.log(result);
-Answer: The arrow function maps each number in the numbers array to either 'High' or 'Low' based on whether the number is greater than 10. The output will be ['Low', 'Low', 'High'].
+Answer: The arrow function maps each number in the numbers array to either 'High' or 'Low' based on whether the number is greater than 10.
+    The output will be ['Low', 'Low', 'High'].
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 19. What is the purpose of the arguments object in a function?
 The arguments object is an array-like object available within a function that holds all the arguments passed to the function.
@@ -937,7 +855,8 @@ Scoping applies in different contexts within your code:
 
 Global Scope: Variables declared outside any functions or blocks have global scope and are accessible everywhere in your code.
 Local Scope: Variables declared inside a function or block are accessible only within that function or block.
-Block Scope (with let and const): Variables declared with let or const inside a block (e.g., within loops, if statements) are only accessible within that block.
+Block Scope (with let and const): Variables declared with let or const inside a block (e.g., within loops, if statements) are 
+    only accessible within that block.
 
     How:Scoping is determined by how and where you declare your variables:
 
@@ -970,4 +889,234 @@ const obj = {
 
 obj.regularMethod(); // Output: "John"
 obj.arrowMethod();   // Output: undefined (or whatever the global 'this.name' is)
+-------------------------------------------------------------------------------------------------------------------------👇📚📄
+What does the this keyword refer to in the context of a function?
+In the context of a function, the this keyword refers to the current execution context or the object that owns or calls the function. 
+    The value of this depends on how the function is invoked and can vary based on the situation in which the function is used.
+
+Here are a few common scenarios that illustrate what this can refer to:
+
+Global Context:
+When a function is called in the global scope (outside any object or function), this refers to the global object.
+    In a web browser environment, this is often the window object.
+
+console.log(this); // Refers to the global object (e.g., 'window' in a browser)
+
+Method Invocation:
+When a function is called as a method of an object, this refers to the object that owns the method.
+
+const obj = {
+  name: "Alice",
+  greet: function() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+
+obj.greet(); // Refers to the 'obj' object
+
+Constructor Invocation:
+When a function is used as a constructor to create an instance of an object using the new keyword, this refers to the newly created instance.
+
+function Person(name) {
+  this.name = name;
+}
+
+const person = new Person("Bob");
+console.log(person.name); // Refers to the 'person' instance
+
+Function Invocation:
+When a function is called standalone (not as a method or constructor), this typically refers to the global object. However, 
+    if you're using strict mode ('use strict';), it will be undefined.
+
+function standaloneFunction() {
+  console.log(this);
+}
+
+standaloneFunction(); // Refers to the global object (or 'undefined' in strict mode)
+
+Arrow Functions:
+Arrow functions behave differently. They capture the this value from their surrounding lexical scope, not from how they are invoked.
+
+const obj = {
+  name: "Charlie",
+  greet: function() {
+    const innerFunction = () => {
+      console.log(`Hello, ${this.name}!`);
+    };
+    innerFunction();
+  }
+};
+
+obj.greet(); // Refers to the 'obj' object due to lexical scoping
+Understanding how this behaves in different contexts is crucial for writing correct and predictable JavaScript code, 
+    especially when working with object-oriented programming, event handling, and asynchronous code.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+What is the output of this code snippet?
+
+function greet() {
+  console.log(this.name);
+}
+
+const person = {
+  name: 'Alice',
+  greet: greet
+};
+
+person.greet();
+Answer: Output will be: "Alice"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+2. What is the value of this inside a function called with call?
+
+function introduce() {
+  console.log(`Hi, I'm ${this.name}`);
+}
+
+const person = { name: 'Bob' };
+
+introduce.call(person);
+Answer: Inside introduce.call(person), this refers to the person object. Output will be: "Hi, I'm Bob"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+3. How does the value of this change when using bind?
+
+function print() {
+  console.log(this.value);
+}
+
+const obj1 = { value: 'Object 1' };
+const obj2 = { value: 'Object 2' };
+
+const boundPrint = print.bind(obj1);
+boundPrint();
+print.call(obj2);
+Answer: bind sets this permanently to the provided object. Output will be: "Object 1" and "Object 1"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+4. What's the output of this code snippet using arrow functions?
+
+const obj = {
+  value: 'Hello',
+  greet: () => console.log(this.value)
+};
+
+obj.greet();
+Answer: Arrow functions don't have their own this, so it captures the global context. Output will be: "undefined"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+5. What's the value of this inside a constructor function?
+
+function Person(name) {
+  this.name = name;
+  this.greet = function() {
+    console.log(`Hello, my name is ${this.name}`);
+  };
+}
+
+const person = new Person('Charlie');
+person.greet();
+Answer: Inside the constructor function, this refers to the instance being created. Output will be: "Hello, my name is Charlie"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+6. How can you ensure this retains its value in a callback function?
+
+const obj = {
+  value: 'Hello',
+  callback: function() {
+    console.log(this.value);
+  }
+};
+
+const boundCallback = obj.callback.bind(obj);
+boundCallback();
+Answer: Use bind to create a new function with this bound to the desired object. Output will be: "Hello"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+7. What's the output of this code snippet inside an object method?
+
+const person = {
+  name: 'Alice',
+  intro: function() {
+    console.log(`Hi, I'm ${this.name}`);
+  }
+};
+
+const sayHello = person.intro;
+sayHello();
+Answer: When calling sayHello, this becomes undefined due to losing context. Output will be: "Hi, I'm undefined"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+8. How does this behave differently in arrow functions compared to regular functions in objects?
+
+const obj = {
+  value: 'Hello',
+  greet: function() {
+    console.log(this.value);
+  },
+  arrowGreet: () => console.log(this.value)
+};
+
+obj.greet();       // Output: "Hello"
+obj.arrowGreet();  // Output: undefined (captures global context)
+Answer: Regular function in greet has its this set to the object, while arrow function in arrowGreet captures global context.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+9. What happens when an arrow function is used as an event handler?
+
+const button = document.getElementById('myButton');
+button.addEventListener('click', () => {
+  console.log(this);
+});
+Answer: Arrow functions inside event handlers capture the global context (window in a browser), not the DOM element that triggered the event.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+10. How can you maintain the correct value of this inside an event handler?
+Answer: Use a regular function as the event handler or bind the arrow function to the desired context before passing it to addEventListener.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+11. What is the value of this in the global scope in strict mode?
+Answer: In strict mode, this in the global scope is undefined, unlike in non-strict mode where it's the global object.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+12. What does this refer to when used inside an immediately-invoked function expression (IIFE)?
+
+(function() {
+  console.log(this); // Refers to the global object
+})();
+Answer: In an IIFE, this refers to the global object (window in a browser environment).
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+13. How can you access the value of this inside a nested function that's not an arrow function?
+Answer: Store the value of this in a variable (self, that, etc.) before entering the nested function.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+14. What's the difference between apply and call methods regarding this?
+Answer: Both methods allow you to explicitly set this, but apply takes arguments as an array, while call takes them as a comma-separated list.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+15. What's a common pitfall with this in callback functions passed to asynchronous operations?
+Answer: this can change unexpectedly when callbacks are used inside asynchronous operations like timers or AJAX requests.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+16. How can you ensure this remains consistent in nested function calls?
+Answer: Use arrow functions for the nested functions to maintain the value of this from the surrounding context.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+17. What's the output of this code snippet with a nested arrow function?
+
+const obj = {
+  value: 'Hello',
+  nested: {
+    print: () => console.log(this.value)
+  }
+};
+
+obj.nested.print();
+Answer: The nested arrow function captures the global context, so the output will be: "undefined"
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+18. How does the value of this change in dynamically nested functions?
+Answer: The value of this can change based on how functions are called within other functions, leading to dynamic context changes.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+19. How does an arrow function within a non-arrow function affect the value of this?
+Answer: An arrow function inside a non-arrow function will capture the this value of the containing function, maintaining it even if the containing function changes this.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+20. What's the value of this in a callback function passed to forEach or map?
+
+const numbers = [1, 2, 3];
+numbers.forEach(function(num) {
+  console.log(this); // Refers to the global object (or undefined in strict mode)
+});
+Answer: In these cases, this refers to the global object or is undefined in strict mode, as callback functions in these methods don't retain the context.
+
+-------------------------------------------------------------------------------------------------------------------------👇📚📄
+
+
+
+
+
+
 
