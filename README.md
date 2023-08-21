@@ -5,10 +5,10 @@ Bare-minimum topics for working on product-based organisation.
 -------------------
 1. Data types
 2. Functions
--------------------
 3. Scope in JavaScript
 4. Closure
 5. Event loop
+-------------------
 6. Prototype and prototype chain
 7. Class and inheritance
 8. DOM
