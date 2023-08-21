@@ -6,11 +6,31 @@ It continuously checks for pending tasks or events and executes associated callb
 2. How does an event loop enable non-blocking behavior?
 Answer: An event loop enables non-blocking behavior by allowing the program to continue executing other tasks while waiting 
 for asynchronous operations, such as I/O or timers, to complete. This prevents the main thread from being blocked.
+  
+  console.log("Start");
+// Asynchronous operation scheduled using setTimeout
+setTimeout(() => {
+    console.log("Async operation completed after 2 seconds");
+}, 2000);
+console.log("End");
+
 
 3. What is the difference between microtasks and macrotasks in an event loop?
 Answer: Microtasks are high-priority tasks that are executed before the event loop moves on to processing macrotasks. 
 They usually include promises and other tasks with immediate responses. Macrotasks, on the other hand, are lower-priority 
 tasks like I/O operations and timers.
+  
+  console.log("Start");
+// Microtask - Higher priority
+Promise.resolve().then(() => {
+    console.log("Microtask executed");
+});
+// Macrotask - Lower priority
+setTimeout(() => {
+    console.log("Macrotask executed");
+}, 0);
+console.log("End");
+
 
 4. How does an event loop handle callback functions?
 Answer: Callback functions are registered with the event loop and associated with specific events or asynchronous operations. 
