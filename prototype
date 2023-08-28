@@ -1,0 +1,174 @@
+Beginner Level:
+Prototype:
+In JavaScript, a prototype is an object that serves as a template for other objects. Every object in JavaScript has a prototype, except for the base object, which is at the top of the prototype chain. You can think of a prototype as a set of shared properties and methods that can be inherited by other objects.
+
+Object Creation and Prototypes:
+When you create an object using the object literal syntax or the new keyword with a constructor function, JavaScript automatically assigns a prototype to that object. This prototype is referenced through the __proto__ property of the object.
+
+
+const person = { name: "John" }; // An object with a prototype
+const person2 = new Object();   // Another way to create an object with a prototype
+person2.name = "Jane";
+Intermediate Level:
+Prototype Chain:
+The prototype chain is a mechanism that allows objects to inherit properties and methods from their prototype. If a property or method is not found on an object, JavaScript looks for it in the object's prototype. If it's still not found, the search continues up the prototype chain until the property or method is found or until the top-level object is reached.
+
+
+console.log(person.name);  // "John"
+console.log(person2.name); // "Jane"
+console.log(person.toString());  // [object Object] (inherited from Object prototype)
+Advanced Level:
+Constructor Functions and Prototypes:
+Constructor functions are used to create objects with shared properties and methods. You can define a constructor function and attach properties to its prototype. Objects created from the constructor function will then inherit these properties.
+
+
+function Person(name) {
+  this.name = name;
+}
+
+Person.prototype.sayHello = function() {
+  console.log(`Hello, my name is ${this.name}.`);
+};
+
+const john = new Person("John");
+john.sayHello(); // "Hello, my name is John."
+Modifying Prototypes:
+You can modify the prototype of a constructor function even after objects have been created. All objects created from that constructor function will reflect the changes.
+
+
+Person.prototype.age = 30;
+console.log(john.age); // 30 (inherited from prototype)
+
+john.age = 32; // Overrides the inherited age property only for the 'john' object
+console.log(john.age); // 32
+Expert Level:
+Object.create() and Object.setPrototypeOf():
+The Object.create() method allows you to create a new object with a specified prototype. This is useful for creating objects without constructor functions.
+
+
+const parent = { x: 10 };
+const child = Object.create(parent);
+console.log(child.x); // 10
+The Object.setPrototypeOf() method allows you to set the prototype of an existing object. However, this operation can be slow and is generally discouraged due to performance implications.
+
+ES6 Classes:
+ES6 introduced a more intuitive way to work with prototypes through the class syntax. Under the hood, classes still use prototypes, but they provide a clearer syntax for creating constructor functions and setting up prototype methods.
+
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+  
+  speak() {
+    console.log(`${this.name} makes a sound.`);
+  }
+}
+
+class Dog extends Animal {
+  speak() {
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const dog = new Dog("Buddy");
+dog.speak(); // "Buddy barks."
+In summary, prototypes and prototype chains are a fundamental part of JavaScript's inheritance mechanism. They allow objects to share properties and methods, providing a way to create reusable and efficient code. As you become more comfortable with prototypes, you'll find them essential for creating well-structured and maintainable code in JavaScript.
+
+
+
+
+User
+Prototype and prototype chain 20 interview question and answers
+ChatGPT
+Certainly! Here are 20 interview questions and answers about prototypes and prototype chains in JavaScript:
+
+Questions:
+What is a prototype in JavaScript?
+
+A prototype in JavaScript is an object that serves as a blueprint for other objects. It contains shared properties and methods that can be inherited by other objects.
+
+How is the prototype of an object accessed?
+
+The prototype of an object can be accessed using the __proto__ property. However, it's recommended to use Object.getPrototypeOf(obj) or the Object.setPrototypeOf(obj, prototype) methods.
+
+Explain the prototype chain in JavaScript.
+
+The prototype chain is a mechanism that allows objects to inherit properties and methods from their prototypes. If a property or method is not found on an object, JavaScript looks for it in the object's prototype and continues searching up the prototype chain until it's found or the root object is reached.
+
+How is an object's prototype determined when created using an object literal?
+
+When an object is created using an object literal ({}), its prototype is automatically set to the Object.prototype.
+
+What is the difference between a constructor function and an ES6 class?
+
+Both constructor functions and ES6 classes are used to create objects with prototypes. ES6 classes provide a more organized and intuitive syntax for creating constructor functions and setting up prototypes.
+
+How do you create an object with a specific prototype using Object.create()?
+
+You can create an object with a specific prototype using Object.create(proto), where proto is the desired prototype object.
+
+What happens when you modify an object's prototype?
+
+Any objects created using that prototype will reflect the changes. However, changing the prototype of an existing object is not recommended and can lead to performance issues.
+
+How can you check if an object has a specific property?
+
+You can use the obj.hasOwnProperty(property) method to check if an object has a specific property that is not inherited.
+
+Can properties of an object shadow properties of its prototype?
+
+Yes, properties of an object can shadow properties of its prototype. If a property exists in both the object and its prototype, the object's property takes precedence.
+
+Explain the concept of constructor and prototype in relation to object creation.
+
+Constructors are functions that help create objects with shared properties and methods. Prototypes are objects associated with constructors that provide these shared properties and methods.
+
+What is the purpose of the instanceof operator?
+
+The instanceof operator is used to check whether an object is an instance of a particular constructor or class.
+
+How does JavaScript handle multiple levels of inheritance in the prototype chain?
+
+JavaScript follows a chain of prototypes for inheritance. If a property is not found in an object's prototype, it looks in the prototype's prototype (and so on) until the property is found or the root object is reached.
+
+What is the top-level object in the prototype chain?
+
+The top-level object in the prototype chain is Object.prototype. All objects ultimately inherit from this object.
+
+What are "own properties" of an object?
+
+Own properties are properties that are directly defined on an object itself, rather than being inherited from its prototype.
+
+How do you prevent an object from inheriting properties from its prototype?
+
+You can use the Object.create(null) method to create an object without a prototype, effectively preventing it from inheriting properties.
+
+What is the difference between "prototype" and "constructor" in a prototype object?
+
+The "prototype" of a constructor function is an object that will become the prototype of objects created by that constructor. The "constructor" property of a prototype object points back to the constructor function that created it.
+
+Can you change an object's prototype after it's created?
+
+Yes, you can change an object's prototype using the Object.setPrototypeOf(obj, newPrototype) method. However, this operation can impact performance and is generally not recommended.
+
+How can you create a custom prototype chain for inheritance?
+
+By setting the prototype of one constructor to an instance of another constructor, you can establish a custom prototype chain for inheritance.
+
+What is the purpose of the Object.prototype.hasOwnProperty() method?
+
+The hasOwnProperty() method is used to check if an object has a specific property as its own property, without traversing up the prototype chain.
+
+Explain the relationship between the prototype and constructor function of an object.
+
+The prototype of a constructor function is an object that will serve as the prototype for objects created by that constructor. The constructor function itself is used to create new instances of objects with the same prototype.
+
+Answers:
+The answers provided here should give you a solid understanding of prototypes and prototype chains in JavaScript, which can be valuable in interviews and real-world coding scenarios.
+
+
+
+
+
+
