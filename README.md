@@ -8,18 +8,18 @@ Bare-minimum topics for working on product-based organisation.
 3. Scope in JavaScript
 4. Closure
 5. Event loop
--------------------
 6. Prototype and prototype chain
-7. Class and inheritance
-8. DOM
-9. bind/call/apply
-10. Promise
-11. WebAPI
-12. Task queue
-13. Call stack
-14. Async/await
-15. Generators
-16. Typescript
+   -------------------
+8. Class and inheritance
+9. DOM
+10. bind/call/apply
+11. Promise
+12. WebAPI
+13. Task queue
+14. Call stack
+15. Async/await
+16. Generators
+17. Typescript
 
 # 𝗕𝗮𝘀𝗶𝗰 𝗛𝗧𝗠𝗟 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀:
 1. block element
