@@ -22,16 +22,25 @@ Constructor Functions and Prototypes:
 Constructor functions are used to create objects with shared properties and methods. You can define a constructor function and attach properties to its prototype. Objects created from the constructor function will then inherit these properties.
 
 
-function Person(name) {
-  this.name = name;
+// Constructor function for creating Person objects
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
 }
 
-Person.prototype.sayHello = function() {
-  console.log(`Hello, my name is ${this.name}.`);
+// Adding a shared method to the prototype of Person
+Person.prototype.introduce = function() {
+    console.log(`Hi, my name is ${this.name} and I am ${this.age} years old.`);
 };
 
-const john = new Person("John");
-john.sayHello(); // "Hello, my name is John."
+// Creating instances using the constructor
+const person1 = new Person("Alice", 30);
+const person2 = new Person("Bob", 25);
+
+// Calling the shared method on instances
+person1.introduce();  // Output: Hi, my name is Alice and I am 30 years old.
+person2.introduce();  // Output: Hi, my name is Bob and I am 25 years old.
+
 Modifying Prototypes:
 You can modify the prototype of a constructor function even after objects have been created. All objects created from that constructor function will reflect the changes.
 
