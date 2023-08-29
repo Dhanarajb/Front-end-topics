@@ -9,7 +9,7 @@ Bare-minimum topics for working on product-based organisation.
 4. Closure
 5. Event loop
 6. Prototype and prototype chain
-   -------------------
+-------------------
 8. Class and inheritance
 9. DOM
 10. bind/call/apply
