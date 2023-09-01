@@ -9,17 +9,17 @@ Bare-minimum topics for working on product-based organisation.
 4. Closure
 5. Event loop
 6. Prototype and prototype chain
--------------------
 8. Class and inheritance
 9. DOM
-10. bind/call/apply
-11. Promise
-12. WebAPI
-13. Task queue
-14. Call stack
-15. Async/await
-16. Generators
-17. Typescript
+-------------------
+11. bind/call/apply
+12. Promise
+13. WebAPI
+14. Task queue
+15. Call stack
+16. Async/await
+17. Generators
+18. Typescript
 
 # 𝗕𝗮𝘀𝗶𝗰 𝗛𝗧𝗠𝗟 𝗖𝗼𝗻𝗰𝗲𝗽𝘁𝘀:
 1. block element
