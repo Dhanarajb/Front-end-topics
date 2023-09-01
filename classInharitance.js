@@ -17,7 +17,8 @@ class Animal {
 
 Create the Subclass (Derived Class):
 
-Define a subclass by using the extends keyword, which indicates that the subclass inherits from the base class. You can also define additional properties and methods specific to the subclass.
+Define a subclass by using the extends keyword, which indicates that the subclass inherits from the base class. 
+    You can also define additional properties and methods specific to the subclass.
 
 class Dog extends Animal {
     constructor(name, breed) {
