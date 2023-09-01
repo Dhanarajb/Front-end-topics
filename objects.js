@@ -1,7 +1,9 @@
 Here's how to create objects in JavaScript:
 
-Object Literal Syntax:
-The simplest way to create an object is by using the object literal syntax, which involves defining the object and its properties within curly braces {}. 
+1. Object Literal Syntax:
+The simplest way to create an object is by using the object literal syntax, which involves defining the object and 
+  its properties within curly braces {}. 
+
 Each property is specified as a key-value pair separated by a colon :.
 
 
@@ -13,8 +15,9 @@ const person = {
 };
 In this example, we've created an object called person with three properties: firstName, lastName, and age.
 
-Constructor Function:
-You can create objects using constructor functions. Constructor functions are like templates for creating multiple objects with the same structure.
+2. Constructor Function:
+You can create objects using constructor functions. Constructor functions are like templates for creating multiple objects 
+  with the same structure.
 
 
 // Constructor function
@@ -29,7 +32,7 @@ const person1 = new Person("John", "Doe", 30);
 const person2 = new Person("Jane", "Smith", 25);
 Here, we've defined a constructor function Person and used it to create two person objects with different values.
 
-Object.create Method:
+3. Object.create Method:
 You can create objects by using the Object.create() method, which allows you to create a new object with a specified prototype object.
 
 
@@ -44,7 +47,7 @@ person.firstName = "John";
 person.lastName = "Doe";
 In this example, person is created with Object.create() and inherits properties and methods from the personPrototype object.
 
-ES6 Class Syntax (Modern Approach):
+4. ES6 Class Syntax (Modern Approach):
 ES6 introduced class syntax for creating objects in a more structured and familiar way for developers coming from other programming languages.
 
 
