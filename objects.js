@@ -1,7 +1,8 @@
 Here's how to create objects in JavaScript:
 
 Object Literal Syntax:
-The simplest way to create an object is by using the object literal syntax, which involves defining the object and its properties within curly braces {}. Each property is specified as a key-value pair separated by a colon :.
+The simplest way to create an object is by using the object literal syntax, which involves defining the object and its properties within curly braces {}. 
+Each property is specified as a key-value pair separated by a colon :.
 
 
 // Creating an object using object literal syntax
