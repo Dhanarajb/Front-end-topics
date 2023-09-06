@@ -17,6 +17,7 @@ Bare-minimum topics for working on product-based organisation.
 15. Task queue
 16. Call stack
 17. Async/await
+18. Hositing
 -------------------
 19. Generators
 20. Typescript
