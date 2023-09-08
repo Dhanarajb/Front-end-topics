@@ -80,7 +80,8 @@ function handleFetchedData(data) {
 fetchData(handleFetchedData); // Pass the callback to fetchData
 
    ** Event Handling:
-Callbacks are commonly used to respond to user interactions or other events. For example, in browser programming, you can attach callback functions to event listeners.
+Callbacks are commonly used to respond to user interactions or other events. For example, in browser programming, 
+       you can attach callback functions to event listeners.
 
 const button = document.querySelector("button");
 
@@ -90,7 +91,8 @@ function buttonClickHandler() {
 button.addEventListener("click", buttonClickHandler); // Attach the callback
 
    ** Control Flow:
-Callbacks can also be used to control the flow of execution in certain situations, such as in functions that involve conditional or iterative behavior.
+Callbacks can also be used to control the flow of execution in certain situations, such as in functions that involve
+       conditional or iterative behavior.
 
 function performTask(task, callback) {
   console.log("Performing task:", task);
@@ -422,7 +424,8 @@ function greeting(name) {
 var greetAlice = greeting("Alice");
 console.log(greetAlice("How are you?")); // Output: Hello, Alice! How are you?
 Answer: Output: Hello, Alice! How are you?
-Explanation: The inner function forms a closure over the name parameter of the outer function, allowing it to access name while being called with a different message.
+Explanation: The inner function forms a closure over the name parameter of the outer function, allowing it to 
+    access name while being called with a different message.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 10:
 
@@ -440,7 +443,8 @@ function outer() {
 var closureFn = outer();
 closureFn(); // Output: 15
 Answer: Output: 15
-Explanation: The inner function has access to both a from its containing outer() function scope and b from its own scope, allowing it to calculate and log the sum.
+Explanation: The inner function has access to both a from its containing outer() function scope and b from its own scope, 
+    allowing it to calculate and log the sum.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 11:
 
@@ -453,7 +457,8 @@ function createMultiplier(factor) {
 var double = createMultiplier(2);
 console.log(double(5)); // Output: 10
 Answer: Output: 10
-Explanation: The closure captures the factor parameter from the outer function and uses it to create a function that doubles the given number.
+Explanation: The closure captures the factor parameter from the outer function and uses it to create a function 
+    that doubles the given number.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 12:
 
@@ -473,7 +478,8 @@ Answer: Output:
 Copy code
 0
 1
-Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, allowing it to increment and remember the count.
+Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, 
+    allowing it to increment and remember the count.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 13:
 
@@ -491,7 +497,8 @@ function outer() {
 var closureFn = outer();
 closureFn();
 Answer: Output: undefined
-Explanation: The variable x inside the inner() function is hoisted but not initialized before the console.log(), so it is undefined when logged.
+Explanation: The variable x inside the inner() function is hoisted but not initialized before the console.log(), 
+    so it is undefined when logged.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 14:
 
@@ -523,7 +530,8 @@ Sure, let's explore a simplified scenario that demonstrates how closures can aff
 
 Scenario: Counter Function
 
-Imagine you're creating a counter function that counts the number of times it's called. You decide to use a closure to keep track of the count.
+Imagine you're creating a counter function that counts the number of times it's called. You decide to use a closure to 
+    keep track of the count.
 
 function createCounter() {
   var count = 0;
@@ -686,11 +694,12 @@ Function composition involves combining two or more functions to produce a new f
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 17. Explain the bind, call, and apply methods in relation to functions.?
 bind, call, and apply are three methods in JavaScript that allow you to control the value of the this keyword within a function and
-    also provide a way to pass arguments to the function. These methods are particularly useful when you want to explicitly set the context for a function or invoke a function with specific arguments.
+    also provide a way to pass arguments to the function. These methods are particularly useful when you want to explicitly set the 
+    context for a function or invoke a function with specific arguments.
 
-bind Method:
-The bind method returns a new function that, when called, has its this value set to a specified value, and any additional 
-    arguments provided are "bound" as the initial arguments to the function.
+bind Method:🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️
+The bind method creates a new function that, when you use it, sets a specific value for the this keyword inside that function. 
+        It also lets you attach some initial arguments that will always be passed to the function whenever you call it.
 
 const obj = {
   name: "Alice"
@@ -703,7 +712,7 @@ function greet() {
 const boundGreet = greet.bind(obj);
 boundGreet(); // Output: Hello, Alice!
 
-call Method:
+call Method:🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️
 The call method is used to call a function with a specified value for this, followed by any arguments passed individually.
 
 const obj = {
@@ -717,7 +726,7 @@ function greet(message) {
 greet.call(obj, "Hi"); // Output: Hi, Bob!
 
 
-apply Method:
+apply Method:🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️🖇️
 The apply method is similar to call, but it takes arguments as an array or an array-like object.
 
 const obj = {
@@ -729,14 +738,151 @@ function greet(message) {
 }
 
 greet.apply(obj, ["Hey"]); // Output: Hey, Charlie!
-All three methods are useful when you want to control the value of this explicitly and pass arguments to a function. Which method you choose depends on the specific use case and how you want to provide the arguments.
+All three methods are useful when you want to control the value of this explicitly and pass arguments to a function. 
+    Which method you choose depends on the specific use case and how you want to provide the arguments.
 
-It's important to note that bind, call, and apply do not modify the original function; instead, they create a new function or directly invoke the function with the specified context and arguments. These methods are commonly used in scenarios like event handling, functional programming, and working with methods that are not directly attached to objects.
+It's important to note that bind, call, and apply do not modify the original function; instead, 
+    they create a new function or directly invoke the function with the specified context and arguments. 
+    These methods are commonly used in scenarios like 📌event handling, 📌functional programming, and 
+    working with methods that are not directly attached to objects.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+1. Using call to invoke a function with a specific context:
+Question:
+const person = {
+  name: "John",
+  greet: function() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
 
+const otherPerson = {
+  name: "Alice"
+};
 
+// How can you make otherPerson greet instead of person using the call method?
+Answer:
 
+person.greet.call(otherPerson); // Outputs: Hello, Alice!
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+2. Using apply to pass an array of arguments:
+Question:
+function sum(a, b, c) {
+  return a + b + c;
+}
 
+// How can you use apply to calculate the sum of [1, 2, 3]?
+Answer:
 
+const numbers = [1, 2, 3];
+const result = sum.apply(null, numbers);
+console.log(result); // Outputs: 6
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+3. Using bind to create a partially applied function:
+Question:
+function multiply(a, b) {
+  return a * b;
+}
+
+// How can you create a function double that always doubles a number using bind?
+Answer:
+
+const double = multiply.bind(null, 2);
+console.log(double(5)); // Outputs: 10
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+4. Using call to borrow methods from other objects:
+Question:
+const car = {
+  brand: "Toyota",
+  start: function() {
+    console.log(`Starting the ${this.brand} car.`);
+  }
+};
+
+const bicycle = {
+  brand: "Trek"
+};
+
+// How can you make the bicycle start using the car's start method?
+Answer:
+
+car.start.call(bicycle); // Outputs: Starting the Trek car.
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+5. Using apply with Math.max to find the maximum of an array:
+Question:
+const numbers = [3, 7, 1, 9, 4];
+
+// How can you find the maximum number in the numbers array using apply and Math.max?
+Answer:
+
+const max = Math.max.apply(null, numbers);
+console.log(max); // Outputs: 9
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+6. Using bind to set a fixed context for an event handler:
+Question:
+const button = document.getElementById("myButton");
+
+function handleClick() {
+  console.log("Button clicked by", this.id);
+}
+
+// How can you set the button as the context for handleClick using bind?
+Answer:
+
+button.addEventListener("click", handleClick.bind(button));
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+7. Using call with a constructor function:
+Question:
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+// How can you create a new Person object using call and pass arguments "John" and 30?
+Answer:
+
+const john = {};
+Person.call(john, "John", 30);
+console.log(john); // Outputs: { name: 'John', age: 30 }
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+8. Using apply to concatenate arrays:
+Question:
+const array1 = [1, 2, 3];
+const array2 = [4, 5, 6];
+
+// How can you concatenate array2 to array1 using apply?
+Answer:
+
+Array.prototype.push.apply(array1, array2);
+console.log(array1); // Outputs: [1, 2, 3, 4, 5, 6]
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+9. Using bind to create a reusable function:
+Question:
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+// How can you create a reusable greeting function that always says "Hello" using bind?
+Answer:
+
+const hello = greet.bind(null, "Hello");
+hello("Alice"); // Outputs: Hello, Alice!
+hello("Bob");   // Outputs: Hello, Bob!
+🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+10. Using call to invoke a function with a dynamic context:
+Question:
+function printMessage() {
+  console.log(this.message);
+}
+
+const context1 = { message: "Context 1" };
+const context2 = { message: "Context 2" };
+
+// How can you call printMessage with different contexts using call?
+Answer:
+
+printMessage.call(context1); // Outputs: Context 1
+printMessage.call(context2); // Outputs: Context 2
+These coding snippet questions and answers should help you understand and practice the call, apply, and bind methods in JavaScript.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 18. What is the difference between arrow functions and regular functions?
 Arrow functions have a more concise syntax and they do not have their own this value; instead, they inherit the 
@@ -778,7 +924,8 @@ Answer: The arrow function multiplies each element of the numbers array by 2 usi
 const greet = (name = 'Guest') => console.log(`Hello, ${name}!`);
 greet();         // Output: Hello, Guest!
 greet('Alice');  // Output: Hello, Alice!
-Answer: The arrow function greet uses a default parameter value. When called without arguments, it greets "Guest". When called with an argument, it greets the provided name.
+Answer: The arrow function greet uses a default parameter value. When called without arguments, it greets "Guest". 
+    When called with an argument, it greets the provided name.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 5. What's the output of this arrow function usage?
 const arr = [1, 2, 3];
@@ -789,7 +936,8 @@ Answer: The arrow function is used with the reduce function to calculate the sum
 6. How does this arrow function handle template literals?
 const getName = (first, last) => `Full Name: ${first} ${last}`;
 console.log(getName('John', 'Doe'));
-Answer: The arrow function getName takes two parameters and returns a template literal with the full name. The output will be Full Name: John Doe.
+Answer: The arrow function getName takes two parameters and returns a template literal with the full name. 
+    The output will be Full Name: John Doe.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 7. What's the result of this arrow function usage?
 const nums = [10, 20, 30];
@@ -810,7 +958,8 @@ Answer: Arrow functions do not bind their own this. In this case, the value of t
 const items = [1, 2, 3, 4];
 const squared = items.map(item => item * item);
 console.log(squared);
-Answer: The arrow function is used with the map function to calculate the square of each element in the array. The output will be [1, 4, 9, 16].
+Answer: The arrow function is used with the map function to calculate the square of each element in the array. 
+    The output will be [1, 4, 9, 16].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 10. How does this arrow function handle destructuring?
 const greet = ({ name }) => console.log(`Hello, ${name}!`);
@@ -821,7 +970,8 @@ Answer: The arrow function greet uses destructuring to extract the name property
 const numbers = [1, 2, 3, 4, 5];
 const evenNumbers = numbers.filter(num => num % 2 === 0);
 console.log(evenNumbers);
-Answer: The arrow function is used with the filter function to create an array containing only the even numbers from the numbers array. The output will be [2, 4].
+Answer: The arrow function is used with the filter function to create an array containing only the even numbers from the numbers array. 
+    The output will be [2, 4].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 12. How does this arrow function behave with setTimeout?
 const delayedLog = message => setTimeout(() => console.log(message), 1000);
@@ -838,7 +988,8 @@ Answer: The arrow function multiplies each element of the numbers array by 3 usi
 const names = ['Alice', 'Bob', 'Charlie'];
 const upperNames = names.map(name => name.toUpperCase());
 console.log(upperNames);
-Answer: The arrow function is used with the map function to convert each name in the names array to uppercase. The output will be ['ALICE', 'BOB', 'CHARLIE'].
+Answer: The arrow function is used with the map function to convert each name in the names array to uppercase. 
+    The output will be ['ALICE', 'BOB', 'CHARLIE'].
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 15. What's the behavior of this arrow function with an object?
 const person = {
@@ -909,7 +1060,8 @@ Variables declared with let and const are block-scoped and are accessible only w
     Why:Understanding scoping is crucial for several reasons:
 
 Avoiding Conflicts: Proper scoping prevents unintended variable conflicts and overwriting of variables in different parts of your code.
-Encapsulation: Scoping helps in creating encapsulated and modular code by limiting the visibility of variables to the relevant parts of your code.
+Encapsulation: Scoping helps in creating encapsulated and modular code by limiting the visibility of variables to the relevant parts
+        of your code.
 Data Privacy: Scoping allows you to create private variables that are inaccessible from outside, enhancing data privacy and security.
 Closures: Scoping is fundamental for closures, enabling inner functions to retain access to variables from their containing functions.
 Debugging: Understanding scoping helps in debugging issues related to variable visibility and accessibility.
@@ -1145,7 +1297,8 @@ Answer: The nested arrow function captures the global context, so the output wil
 Answer: The value of this can change based on how functions are called within other functions, leading to dynamic context changes.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 19. How does an arrow function within a non-arrow function affect the value of this?
-Answer: An arrow function inside a non-arrow function will capture the this value of the containing function, maintaining it even if the containing function changes this.
+Answer: An arrow function inside a non-arrow function will capture the this value of the containing function, maintaining 
+it even if the containing function changes this.
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 20. What's the value of this in a callback function passed to forEach or map?
 
@@ -1153,9 +1306,10 @@ const numbers = [1, 2, 3];
 numbers.forEach(function(num) {
   console.log(this); // Refers to the global object (or undefined in strict mode)
 });
-Answer: In these cases, this refers to the global object or is undefined in strict mode, as callback functions in these methods don't retain the context.
+Answer: In these cases, this refers to the global object or is undefined in strict mode, as callback functions in 
+    these methods don't retain the context.
 
--------------------------------------------------------------------------------------------------------------------------👇📚📄
+
 
 
 
