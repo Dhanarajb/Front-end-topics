@@ -245,145 +245,105 @@ Answer: You can convert a string to a number using the parseInt() or parseFloat(
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log(typeof undefined);
 Answer: The output will be: undefined
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the result of the following comparison?
 
-javascript
-Copy code
 console.log(5 == "5");
 Answer: The result will be true. The == operator performs type coercion, converting the string to a number before comparison.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log(0 === -0);
 Answer: The output will be: true
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the value of x after the following code snippet?
 
-javascript
-Copy code
 let x = null;
 console.log(typeof x);
 Answer: The value of x will be object.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log("5" + 5);
 Answer: The output will be: "55"
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the value of result in the following code snippet?
 
-javascript
-Copy code
 const result = isNaN("Hello");
 Answer: The value of result will be true, as "Hello" is not a valid numeric value.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log(typeof NaN);
 Answer: The output will be: "number"
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the value of x in the following code snippet?
 
-javascript
-Copy code
 let x = 5;
 x += "2";
 Answer: The value of x will be "52".
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log([] == 0);
 Answer: The output will be: true. JavaScript performs type coercion, converting the empty array to a numeric value.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the output of the following code snippet?
 
-javascript
-Copy code
 console.log([10] == 10);
 Answer: The output will be: true. JavaScript performs type coercion, converting the array to a numeric value.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log(+"42");
 Answer: The output will be: 42. The unary + operator converts the string to a number.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the value of y in the following code snippet?
 
-javascript
-Copy code
 const x = "5";
 const y = x++;
 Answer: The value of y will be "5". The postfix increment operation converts the string to a number.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log(typeof (null + 5));
 Answer: The output will be: "number". The null is coerced to 0 before addition.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log("Hello" instanceof String);
 Answer: The output will be: false. The string primitive "Hello" is not an instance of the String constructor.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the value of z in the following code snippet?
 
-javascript
-Copy code
 let z = true + true;
 Answer: The value of z will be 2. The true value is coerced to 1 before addition.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the output of the following code snippet?
 
-javascript
-Copy code
 console.log("5" * 2);
 Answer: The output will be: 10. The string is coerced to a number before multiplication.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the result of the following code snippet?
 
-javascript
-Copy code
 console.log(typeof [1, 2]);
 Answer: The output will be: "object". Arrays are a type of object in JavaScript.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the output of the following code snippet?
 
-javascript
-Copy code
 console.log(2 + null);
 Answer: The output will be: 2. The null is coerced to 0 before addition.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What will be the value of y in the following code snippet?
 
-javascript
-Copy code
 let x = 5;
 let y = x--;
 Answer: The value of y will be 5. The postfix decrement operation does not change the value of y before the decrement.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Question: What is the output of the following code snippet?
 
-javascript
-Copy code
 console.log(typeof true);
 Answer: The output will be: "boolean"
 
