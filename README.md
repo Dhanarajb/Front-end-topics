@@ -18,6 +18,7 @@ Bare-minimum topics for working on product-based organisation.
 16. Call stack
 17. Async/await
 18. Hositing
+19. Array methods
 -------------------
 19. Generators
 20. Typescript
