@@ -149,17 +149,17 @@ In this code, x is declared with var and is hoisted to the top of the scope but 
 
 the Temporal Dead Zone (TDZ) in JavaScript in simple terms:
 
-Imagine you have a special box for storing information, like a container. You want to use this box to store a number, like "5." But before you can use the box, you need to declare it and give it a name, like "myNumber."
+Imagine you have a special box for storing information, like a container. You want to use this box to store a number, like "5." 
+   But before you can use the box, you need to declare it and give it a name, like "myNumber."
 
 Now, here's where the Temporal Dead Zone comes in:
 
-You start a conversation with your computer (JavaScript) and say, "I'm going to use a box called 'myNumber' to store the number 5." But you haven't actually created the box yet; you've only talked about it.
-
-Until you officially create the box (by using let or const to declare it), JavaScript says, "I know you want to use 'myNumber,' but I'm not sure what it is yet. I'm going to create a special zone where I'm waiting for you to create 'myNumber.'"
-
-During this waiting period (the Temporal Dead Zone), if you try to do anything with 'myNumber,' like reading its value or changing it, JavaScript will say, "Sorry, I can't do that. 'myNumber' doesn't exist yet, even though you talked about it."
-
-Once you finally declare 'myNumber' by saying let myNumber = 5;, JavaScript says, "Great! 'myNumber' now exists, and you can use it without any problems."
+You start a conversation with your computer (JavaScript) and say, "I'm going to use a box called 'myNumber' to store the number 5." 
+   But you haven't actually created the box yet; you've only talked about it. Until you officially create the box (by using let or const to declare it), 
+   JavaScript says, "I know you want to use 'myNumber,' but I'm not sure what it is yet. I'm going to create a special zone where I'm waiting for you to 
+   create 'myNumber.'" During this waiting period (the Temporal Dead Zone), if you try to do anything with 'myNumber,' like reading its value or changing it, 
+   JavaScript will say, "Sorry, I can't do that. 'myNumber' doesn't exist yet, even though you talked about it." Once you finally declare 'myNumber' 
+   by saying let myNumber = 5;, JavaScript says, "Great! 'myNumber' now exists, and you can use it without any problems."
 
 
 
