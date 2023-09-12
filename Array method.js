@@ -226,4 +226,222 @@ Custom sorting (numeric):
 let arr = [5, 2, 9, 1, 5];
 arr.sort((a, b) => a - b); // Sorts the array numerically
 🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪🟪
+For Loop:
 
+It is one of the original ways of iterating over an array.
+It typically involves specifying an iterator, counter, and incrementor to control the loop.
+It can be faster in performance due to its direct control over iterations.
+It allows you to use the break statement to exit the loop when a certain condition is met.
+  
+forEach Loop:
+
+It is a newer way with less code to iterate over an array.
+It simplifies the iteration process by abstracting away the iterator, counter, and incrementor, making the code more concise.
+It can be slower in performance compared to a for loop because it uses a callback function for each element.
+It doesn't allow the use of the break statement to exit the loop because of the callback function-based approach.
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+1. Iterate and Print Array Elements:
+
+Question: How do you print each element of an array using forEach()?
+Answer:
+array.forEach(function(element) {
+  console.log(element);
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+2. Modify Array Elements:
+
+Question: Update each element of an array by adding 10 to each using forEach().
+Answer:
+array.forEach(function(element, index, arr) {
+  arr[index] = element + 10;
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+3. Sum of Array Elements:
+
+Question: Calculate the sum of all elements in an array using forEach().
+Answer:
+let sum = 0;
+array.forEach(function(element) {
+  sum += element;
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+4. Filter Array Elements:
+
+Question: Use forEach() to create a new array containing only even numbers from an existing array.
+Answer:
+const evenNumbers = [];
+array.forEach(function(element) {
+  if (element % 2 === 0) {
+    evenNumbers.push(element);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+5. Counting Elements:
+
+Question: Count how many times a specific element appears in an array using forEach().
+Answer:
+let count = 0;
+const elementToCount = 42;
+array.forEach(function(element) {
+  if (element === elementToCount) {
+    count++;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+6. Removing Elements:
+
+Question: Remove all occurrences of a specific element from an array using forEach().
+Answer:
+const elementToRemove = 7;
+array.forEach(function(element, index, arr) {
+  if (element === elementToRemove) {
+    arr.splice(index, 1);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+7. Finding Maximum Element:
+
+Question: Find the maximum element in an array using forEach().
+Answer:
+let max = Number.NEGATIVE_INFINITY;
+array.forEach(function(element) {
+  if (element > max) {
+    max = element;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+8. Finding Minimum Element:
+
+Question: Find the minimum element in an array using forEach().
+Answer:
+let min = Number.POSITIVE_INFINITY;
+array.forEach(function(element) {
+  if (element < min) {
+    min = element;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+9. Checking for Element Existence:
+
+Question: Check if a specific element exists in an array using forEach().
+Answer:
+let exists = false;
+const elementToCheck = 99;
+array.forEach(function(element) {
+  if (element === elementToCheck) {
+    exists = true;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+10. Removing Duplicates:
+
+Question: Remove duplicate elements from an array using forEach().
+Answer:
+const uniqueArray = [];
+array.forEach(function(element) {
+  if (!uniqueArray.includes(element)) {
+    uniqueArray.push(element);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+11. Array Manipulation:
+
+Question: Use forEach() to create a new array where each element is squared.
+Answer:
+const squaredArray = [];
+array.forEach(function(element) {
+  squaredArray.push(element * element);
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+12. Finding the Index of an Element:
+
+Question: Find the index of a specific element in an array using forEach().
+Answer:
+let foundIndex = -1;
+const elementToFind = 55;
+array.forEach(function(element, index) {
+  if (element === elementToFind) {
+    foundIndex = index;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+13. Capitalizing Strings:
+
+Question: Use forEach() to capitalize each string element in an array.
+Answer:
+array.forEach(function(element, index, arr) {
+  if (typeof element === 'string') {
+    arr[index] = element.toUpperCase();
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+14. Array Filtering:
+
+Question: Create a new array with elements that pass a certain condition using forEach().
+Answer:
+const filteredArray = [];
+array.forEach(function(element) {
+  if (element > 50) {
+    filteredArray.push(element);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+15. Modifying Array Elements Conditionally:
+
+Question: Use forEach() to double each element if it's greater than 20.
+Answer:
+array.forEach(function(element, index, arr) {
+  if (element > 20) {
+    arr[index] = element * 2;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+16. Removing Elements Based on a Condition:
+
+Question: Remove all elements less than 10 from an array using forEach().
+Answer:
+array.forEach(function(element, index, arr) {
+  if (element < 10) {
+    arr.splice(index, 1);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+17. Converting to Different Data Types:
+
+Question: Convert all elements to strings using forEach().
+Answer:
+array.forEach(function(element, index, arr) {
+  arr[index] = String(element);
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+18. Checking for Empty Strings:
+
+Question: Check for and remove empty string elements from an array using forEach().
+Answer:
+array.forEach(function(element, index, arr) {
+  if (element === '') {
+    arr.splice(index, 1);
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+19. Counting Positive Numbers:
+
+Question: Count the number of positive elements in an array using forEach().
+Answer:
+let count = 0;
+array.forEach(function(element) {
+  if (element > 0) {
+    count++;
+  }
+});
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
+20. Array Transformation:
+
+Question: Transform each element of an array by adding 5 to it using forEach().
+Answer:
+array.forEach(function(element, index, arr) {
+  arr[index] = element + 5;
+});
+These coding questions and answers should help you practice and understand how to use the forEach() method effectively 
+  in various scenarios when working with arrays in JavaScript.
+🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫🟫
