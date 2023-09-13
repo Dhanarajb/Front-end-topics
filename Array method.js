@@ -949,3 +949,75 @@ const exponentialMovingAverage = values.reduce((accumulator, current, index) => 
 console.log(exponentialMovingAverage); // Output: 26 (rounded to the nearest integer)
 These coding interview questions and answers should help you understand and practice the reduce() function in various contexts.
 🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find First Even Number using find():
+
+Question: Write a JavaScript code snippet to find the first even number in an array using the find() method.
+Answer:
+javascript
+Copy code
+const numbers = [1, 3, 5, 4, 7, 8, 9];
+const firstEven = numbers.find((number) => number % 2 === 0);
+console.log(firstEven); // Output: 4
+🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+Find Object by Property using find():
+
+Question: Write a code snippet to find an object in an array of objects based on a specific property using the find() method.
+Answer:
+javascript
+Copy code
+const students = [
+  { id: 1, name: 'Alice' },
+  { id: 2, name: 'Bob' },
+  { id: 3, name: 'Charlie' },
+];
+const targetId = 2;
+const student = students.find((student) => student.id === targetId);
+console.log(student); // Output: { id: 2, name: 'Bob' }
+🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+Find First String with Length Greater Than 5 using find():
+
+Question: Write a code snippet to find the first string in an array with a length greater than 5 characters using the find() method.
+Answer:
+javascript
+Copy code
+const words = ['apple', 'banana', 'cherry', 'date', 'fig'];
+const longWord = words.find((word) => word.length > 5);
+console.log(longWord); // Output: 'banana'
+🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+Find Prime Number using find():
+
+Question: Write a code snippet to find the first prime number in an array of numbers using the find() method.
+Answer:
+javascript
+Copy code
+const numbers = [4, 9, 15, 7, 11, 22, 29];
+const isPrime = (number) => {
+  if (number <= 1) return false;
+  if (number <= 3) return true;
+  if (number % 2 === 0 || number % 3 === 0) return false;
+  let i = 5;
+  while (i * i <= number) {
+    if (number % i === 0 || number % (i + 2) === 0) return false;
+    i += 6;
+  }
+  return true;
+};
+const firstPrime = numbers.find((number) => isPrime(number));
+console.log(firstPrime); // Output: 7
+🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
+Find Missing Element in Array using find():
+
+Question: Write a code snippet to find the missing element in an array of consecutive integers using the find() method.
+Answer:
+javascript
+Copy code
+const numbers = [1, 2, 3, 5, 6, 7, 8];
+const findMissing = (arr) => {
+  const n = arr.length + 1;
+  const sumOfNumbers = (n * (n + 1)) / 2;
+  const sumOfArray = arr.reduce((accumulator, current) => accumulator + current, 0);
+  return sumOfNumbers - sumOfArray;
+};
+const missingNumber = findMissing(numbers);
+console.log(missingNumber); // Output: 4
+🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲🔲
