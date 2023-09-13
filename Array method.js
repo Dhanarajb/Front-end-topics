@@ -704,3 +704,248 @@ const products = [
 ];
 const fruitProducts = products.filter((product) => product.category === 'fruit');
 🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨
+
+Sum of Array Elements using reduce():
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Question: Write a JavaScript code snippet to find the sum of all elements in an array using the reduce() function.
+Answer:
+const arr = [1, 2, 3, 4, 5];
+const sum = arr.reduce((accumulator, current) => accumulator + current, 0);
+console.log(sum); // Output: 15
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find Maximum Element using reduce():
+
+Question: Write a code snippet to find the maximum element in an array using the reduce() function.
+Answer:
+const arr = [12, 5, 27, 8, 16];
+const max = arr.reduce((accumulator, current) => Math.max(accumulator, current), arr[0]);
+console.log(max); // Output: 27
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Flatten an Array using reduce():
+
+Question: Write a code snippet to flatten a nested array into a single array using reduce().
+Answer:
+const nestedArray = [[1, 2], [3, 4], [5, 6]];
+const flattenedArray = nestedArray.reduce((accumulator, current) => accumulator.concat(current), []);
+console.log(flattenedArray); // Output: [1, 2, 3, 4, 5, 6]
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Counting Occurrences using reduce():
+
+Question: Write a code snippet to count the occurrences of each element in an array using reduce().
+Answer:
+const arr = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+const countOccurrences = arr.reduce((accumulator, current) => {
+  accumulator[current] = (accumulator[current] || 0) + 1;
+  return accumulator;
+}, {});
+console.log(countOccurrences); // Output: {1: 1, 2: 2, 3: 3, 4: 4}
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Concatenate Array of Strings using reduce():
+
+Question: Write a code snippet to concatenate an array of strings into a single string using reduce().
+Answer:
+const strArray = ['Hello', ' ', 'World', '!'];
+const concatenatedString = strArray.reduce((accumulator, current) => accumulator + current, '');
+console.log(concatenatedString); // Output: 'Hello World!'
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Product of Array Elements using reduce():
+
+Question: Write a code snippet to find the product of all elements in an array using reduce().
+Answer:
+const arr = [2, 3, 4, 5];
+const product = arr.reduce((accumulator, current) => accumulator * current, 1);
+console.log(product); // Output: 120
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Custom Reduce Function:
+
+Question: Implement a custom reduce() function that works like the built-in reduce() function.
+Answer:
+Array.prototype.customReduce = function(callback, initialValue) {
+  let accumulator = initialValue === undefined ? this[0] : initialValue;
+  for (let i = initialValue === undefined ? 1 : 0; i < this.length; i++) {
+    accumulator = callback(accumulator, this[i], i, this);
+  }
+  return accumulator;
+};
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find Average using reduce():
+
+Question: Write a code snippet to find the average of elements in an array using reduce().
+Answer:
+const arr = [10, 20, 30, 40, 50];
+const average = arr.reduce((accumulator, current, index, array) => {
+  accumulator += current;
+  if (index === array.length - 1) {
+    return accumulator / array.length;
+  } else {
+    return accumulator;
+  }
+}, 0);
+console.log(average); // Output: 30
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Remove Duplicate Elements using reduce():
+
+Question: Write a code snippet to remove duplicate elements from an array using reduce().
+Answer:
+const arr = [1, 2, 2, 3, 4, 4, 5];
+const uniqueArray = arr.reduce((accumulator, current) => {
+  if (!accumulator.includes(current)) {
+    accumulator.push(current);
+  }
+  return accumulator;
+}, []);
+console.log(uniqueArray); // Output: [1, 2, 3, 4, 5]
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Calculate Factorial using reduce():
+
+Question: Write a code snippet to calculate the factorial of a number using reduce().
+Answer:
+const n = 5;
+const factorial = Array.from({ length: n }, (_, i) => i + 1).reduce((accumulator, current) => accumulator * current, 1);
+console.log(factorial); // Output: 120
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find Longest Word in Array using reduce():
+
+Question: Write a code snippet to find the longest word in an array of strings using reduce().
+Answer:
+const words = ['apple', 'banana', 'cherry', 'date', 'fig'];
+const longestWord = words.reduce((accumulator, current) => (current.length > accumulator.length ? current : accumulator), '');
+console.log(longestWord); // Output: 'banana'
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Grouping Elements by Property using reduce():
+
+Question: Write a code snippet to group an array of objects by a specific property using reduce().
+Answer:
+const data = [
+  { category: 'Fruit', name: 'Apple' },
+  { category: 'Fruit', name: 'Banana' },
+  { category: 'Vegetable', name: 'Carrot' },
+  { category: 'Fruit', name: 'Cherry' },
+];
+
+const groupedData = data.reduce((accumulator, current) => {
+  const key = current.category;
+  if (!accumulator[key]) {
+    accumulator[key] = [];
+  }
+  accumulator[key].push(current);
+  return accumulator;
+}, {});
+
+console.log(groupedData);
+// Output: { Fruit: [ { category: 'Fruit', name: 'Apple' }, { category: 'Fruit', name: 'Banana' }, { category: 'Fruit', name: 'Cherry' } ],
+//           Vegetable: [ { category: 'Vegetable', name: 'Carrot' } ] }
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find the First Occurrence of an Element using reduce():
+
+Question: Write a code snippet to find the index of the first occurrence of a specific element in an array using reduce().
+Answer:
+const arr = [10, 20, 30, 40, 50];
+const target = 30;
+const firstIndex = arr.reduce((accumulator, current, index) => {
+  if (accumulator === -1 && current === target) {
+    return index;
+  }
+  return accumulator;
+}, -1);
+console.log(firstIndex); // Output: 2 (Index of the first occurrence of 30)
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Remove Falsy Values using reduce():
+
+Question: Write a code snippet to remove falsy values (e.g., false, null, 0, "") from an array using reduce().
+Answer:
+const arr = [0, 1, false, true, '', 'hello', null];
+const filteredArray = arr.reduce((accumulator, current) => {
+  if (current) {
+    accumulator.push(current);
+  }
+  return accumulator;
+}, []);
+console.log(filteredArray); // Output: [1, true, 'hello']
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Find Common Elements in Arrays using reduce():
+
+Question: Write a code snippet to find the common elements between two arrays using reduce().
+Answer:
+const arr1 = [1, 2, 3, 4, 5];
+const arr2 = [3, 4, 5, 6, 7];
+const commonElements = arr1.reduce((accumulator, current) => {
+  if (arr2.includes(current)) {
+    accumulator.push(current);
+  }
+  return accumulator;
+}, []);
+console.log(commonElements); // Output: [3, 4, 5]
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Calculate the Power of Numbers using reduce():
+
+Question: Write a code snippet to calculate the result of raising each element in an array to a specific power using reduce().
+Answer:
+const arr = [2, 3, 4, 5];
+const power = 3;
+const poweredArray = arr.reduce((accumulator, current) => {
+  accumulator.push(Math.pow(current, power));
+  return accumulator;
+}, []);
+console.log(poweredArray); // Output: [8, 27, 64, 125]
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Implement map() using reduce():
+
+Question: Implement a custom map() function that works like the built-in map() function using reduce().
+Answer:
+Array.prototype.customMap = function(callback) {
+  return this.reduce((accumulator, current, index, array) => {
+    accumulator.push(callback(current, index, array));
+    return accumulator;
+  }, []);
+};
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Calculate the Fibonacci Sequence using reduce():
+
+Question: Write a code snippet to generate the Fibonacci sequence up to a given number of terms using reduce().
+Answer:
+const n = 8;
+const fibonacciSequence = Array.from({ length: n }, (_, index) =>
+  index < 2 ? index : null
+).reduce((accumulator, _, index) => {
+  if (index < 2) {
+    accumulator.push(index);
+  } else {
+    const nextFibonacci = accumulator[index - 1] + accumulator[index - 2];
+    accumulator.push(nextFibonacci);
+  }
+  return accumulator;
+}, []);
+console.log(fibonacciSequence); // Output: [0, 1, 1, 2, 3, 5, 8, 13]
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Group Words by Length using reduce():
+
+Question: Write a code snippet to group an array of words by their length using reduce().
+Answer:
+const words = ['apple', 'banana', 'cherry', 'date', 'fig'];
+const groupedByLength = words.reduce((accumulator, current) => {
+  const length = current.length;
+  if (!accumulator[length]) {
+    accumulator[length] = [];
+  }
+  accumulator[length].push(current);
+  return accumulator;
+}, {});
+console.log(groupedByLength);
+// Output: { '5': ['apple'], '6': ['banana', 'cherry'], '4': ['date', 'fig'] }
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
+Calculate the Exponential Average using reduce():
+
+Question: Write a code snippet to calculate the exponential moving average of an array of values using reduce().
+Answer:
+const values = [10, 20, 30, 40, 50];
+const smoothingFactor = 0.2;
+const exponentialMovingAverage = values.reduce((accumulator, current, index) => {
+  if (index === 0) {
+    return current;
+  }
+  return (1 - smoothingFactor) * accumulator + smoothingFactor * current;
+}, 0);
+console.log(exponentialMovingAverage); // Output: 26 (rounded to the nearest integer)
+These coding interview questions and answers should help you understand and practice the reduce() function in various contexts.
+🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧🟧
