@@ -2,13 +2,27 @@ What are the primitive data types in JavaScript?
 Answer: The primitive data types in JavaScript are undefined, null, boolean, number, string, and symbol (ES6).
 
 Differentiate between null and undefined.
-Answer: null is an intentional absence of any value and must be assigned, while undefined is the default value of a declared variable that has not been assigned a value.
-Undefined
-        let x;  // x is undefined because it's declared but not assigned a value
-        console.log(x);  // Output: undefined
-Null
-        let y = null;  // y is assigned the value null
-        console.log(y);  // Output: null
+Answer: null:- represents the intentional absence of any object value  
+        undefined:- declared variable that has not been assigned a value.
+        
+// Declare a variable without assigning a value
+let myVariable;
+
+// Check if the variable is undefined
+console.log(typeof myVariable); // undefined
+
+// Assign the null value to the variable
+myVariable = null;
+
+// Check the type of the variable
+console.log(typeof myVariable); // object
+
+// Check if the variable is strictly equal to undefined
+console.log(myVariable === undefined); // false
+
+// Check if the variable is loosely equal to undefined
+console.log(myVariable == undefined); // true
+
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 
 How do you check the type of a variable in JavaScript?
@@ -30,10 +44,35 @@ console.log(typeof func);  // Output: "function"
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 
 What is the difference between == and ===?
-Answer: == is the equality operator that performs type coercion, while === is the strict equality operator that checks both value and type without coercion.
+Answer: 
+The two equality operators in JavaScript are == and ===. The == operator performs a loose equality comparison, 
+        while the === operator performs a strict equality comparison.
+
+Loose equality:-> means that the operator will try to convert the operands to the same type before comparing them. 
+        This can lead to some unexpected results, 
+        such as the following:
+
+"2" == 2; // true
+null == undefined; // true
+Use code with caution. Learn more
+In the first example, the string "2" is converted to a number before being compared to the number 2. In the second example, 
+        the null and undefined values are both converted to the same type, which is undefined, before being compared.
+
+Strict equality:-> means that the operator will compare the operands as is, without any type conversion. This means that the 
+        operands must be of the same type and have the same value in order for the comparison to return true.
+
+"2" === 2; // false
+null === undefined; // false
+Use code with caution. Learn more
+In the first example, the string "2" and the number 2 are not of the same type, so the comparison returns false. In the second example, 
+        the null and undefined values are not strictly equal to each other, so the comparison also returns false.
+
+
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 What is type coercion?
 Answer: Type coercion is the automatic conversion of one data type to another during operations, often used in comparisons.
+        
+-------------------------------------------------------------------------------------------------------------------------👇📚📄
 
 Explain dynamic typing in JavaScript.
 Answer: Dynamic typing means variables can change their data type during runtime without explicit type declarations.
@@ -51,7 +90,8 @@ How do you create a string in JavaScript?
 Answer: Strings can be created using single quotes, double quotes, or backticks (template literals).
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 What is the difference between NaN and Infinity?
-Answer: NaN represents an undefined value resulting from operations, while Infinity represents positive infinity, a value larger than any finite number.
+Answer: NaN:  stands for "Not a Number" and indicates that a value is not a valid number.
+        Infinity: represents a value that is infinitely large or infinitely small.
 NaN
         let result = 0 / 0; // This operation results in NaN
         console.log(result); // Output: NaN
@@ -67,7 +107,8 @@ How do you create an array in JavaScript?
 Answer: Arrays are created using square brackets, like const myArray = [1, 2, 3];.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 What are objects in JavaScript?
-Answer: Objects are complex data types that store collections of key-value pairs, where keys are strings (or Symbols) and values can be of any data type, including other objects.
+Answer: Objects are complex data types that store collections of key-value pairs, where keys are strings (or Symbols) and 
+        values can be of any data type, including other objects.
 
         // Creating an object representing a person
 let person = {
@@ -193,7 +234,8 @@ let num = parseInt(numString); // Parse the string as an integer
 console.log(num + 10); // Outputs: 52 (numeric addition)
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
 Explain the concept of truthy and falsy values in JavaScript.
-Answer: In JavaScript, values that are considered false in a boolean context are called falsy values, while values that evaluate to true are truthy. Examples of falsy values include false, 0, null, undefined, NaN, and an empty string.
+Answer: In JavaScript, values that are considered false in a boolean context are called falsy values, while values that evaluate to true are truthy. 
+        Examples of falsy values include false, 0, null, undefined, NaN, and an empty string.
 
         if (true) {
     console.log("true is truthy");
