@@ -124,7 +124,7 @@ function example() {
 example();
 In this example, insideBlock is declared inside an if block, but it's still accessible within the entire example function because of var hoisting.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------📝📝📌
-TDZ
+TDZ - We are trying to access the variable which has been not declared or initialized yet.
 
 The Temporal Dead Zone (TDZ) is a concept in JavaScript that refers to the period when a variable is in scope but cannot be accessed before its declaration due to hoisting.
   This concept applies specifically to variables declared with let and const.
