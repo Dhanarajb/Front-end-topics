@@ -254,6 +254,55 @@ function outerFunction() {
 var closureExample = outerFunction();  // Now closureExample holds the inner function
 
 closureExample();  // Output: I'm from outside!
+
+Example: A Counter with Private Variables
+
+Imagine you are building a counter application, and you want to keep the count variable private. You want to expose only a set of functions to interact with the counter value, ensuring that the count can't be directly modified from outside the functions. This can be achieved using closures:
+
+
+function createCounter() {
+  // Private variable
+  let count = 0;
+
+  // Public functions to interact with the count
+  function increment() {
+    count++;
+  }
+
+  function decrement() {
+    count--;
+  }
+
+  function getCount() {
+    return count;
+  }
+
+  // Return an object with public functions
+  return {
+    increment,
+    decrement,
+    getCount
+  };
+}
+
+// Create a counter instance
+const counter = createCounter();
+
+// Use the public functions to interact with the count
+counter.increment();
+counter.increment();
+counter.decrement();
+
+console.log("Current Count:", counter.getCount()); // Output: Current Count: 1
+In this example:
+
+The createCounter function is called to create a counter instance.
+Inside createCounter, a private variable count is defined, and three functions (increment, decrement, and getCount) are defined within the same scope.
+These functions have access to the count variable because of the closure. They can read and modify the count variable, but the count variable is not accessible from outside the createCounter function.
+The createCounter function returns an object with references to the public functions, providing a controlled way to interact with the private count variable.
+This is a real-world example of how closures can be used to encapsulate data and behavior, allowing you to create objects with private variables and controlled access to those variables.
+
+
 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
 Question 1:
 
