@@ -49,6 +49,16 @@ setTimeout(message, 3000);
 
 ```
 ------
+### What is an Anonymous Function?
+> Alternatively, we can define a function directly inside another function, instead of calling it. It will look like this:
+
+```
+setTimeout(function() {  
+    console.log("This message is shown after 3 seconds");
+}, 3000);
+```
+--
+As we can see, the callback function here has no name and a function definition without a name in JavaScript is called as an “anonymous function”. 
   ** Asynchronous Operations:
 When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
         what should happen once the operation is completed. This helps avoid blocking the main thread of execution.
