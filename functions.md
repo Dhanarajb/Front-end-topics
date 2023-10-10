@@ -59,7 +59,14 @@ setTimeout(function() {
 ```
 > As we can see, the callback function here has no name and a function definition without a name in JavaScript is called as an “anonymous function”. 
 --
-
+### Callback as an Arrow Function
+> If you prefer, you can also write the same callback function as an ES6 arrow function, which is a newer type of function in JavaScript:
+```
+setTimeout(() => { 
+    console.log("This message is shown after 3 seconds");
+}, 3000);
+```
+---
   ** Asynchronous Operations:
 When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
         what should happen once the operation is completed. This helps avoid blocking the main thread of execution.
