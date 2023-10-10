@@ -71,7 +71,7 @@ setTimeout(() => {
 > JavaScript is an event-driven programming language. We also use callback functions for event declarations. For example, let’s say we want users to click on a button:
 ```
 <button id="callback-btn">Click here</button>
-This time we will see a message on the console only when the user clicks on the button:
+`This time we will see a message on the console only when the user clicks on the button:`
 
 document.queryselector("#callback-btn")
     .addEventListener("click", function() {    
