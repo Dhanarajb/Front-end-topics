@@ -41,7 +41,6 @@ How can you create a copy of an existing function with a specific context using 
 ### How do you define a function in JavaScript?
 > the function keyword followed by the function name, a set of parentheses for parameters, 
     and a pair of curly braces to enclose the function body. 
-
 `function functionName(parameters) {
     // Function body
 }`
@@ -54,7 +53,6 @@ How can you create a copy of an existing function with a specific context using 
 ----------------------------------------------------------------------------------------------------------------------
 ### How can you return a value from a function?
 > Use the return statement:
-
 `function add(a, b) {
     return a + b;
 }`
