@@ -58,7 +58,7 @@ setTimeout(function() {
 }, 3000);
 ```
 > As we can see, the callback function here has no name and a function definition without a name in JavaScript is called as an “anonymous function”. 
---
+---
 ### Callback as an Arrow Function
 > If you prefer, you can also write the same callback function as an ES6 arrow function, which is a newer type of function in JavaScript:
 ```
@@ -67,6 +67,19 @@ setTimeout(() => {
 }, 3000);
 ```
 ---
+
+### What about Events?
+JavaScript is an event-driven programming language. We also use callback functions for event declarations. For example, let’s say we want users to click on a button:
+```
+<button id="callback-btn">Click here</button>
+This time we will see a message on the console only when the user clicks on the button:
+
+document.queryselector("#callback-btn")
+    .addEventListener("click", function() {    
+      console.log("User has clicked on the button!");
+});
+```
+> So here we select the button first with its id, and then we add an event listener with the addEventListener method. It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
   ** Asynchronous Operations:
 When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
         what should happen once the operation is completed. This helps avoid blocking the main thread of execution.
