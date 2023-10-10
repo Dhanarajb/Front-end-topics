@@ -36,7 +36,7 @@ How can you create a copy of an existing function with a specific context using 
 
 ---------------------------------------------------------------------------------------------------------------
 ### What is a function in JavaScript?
-A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.
+`A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.`
 ----------------------------------------------------------------------------------------------------------------
 ### How do you define a function in JavaScript?
 the function keyword followed by the function name, a set of parentheses for parameters, 
