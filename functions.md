@@ -81,7 +81,7 @@ document.queryselector("#callback-btn")
 > So here we select the button first with its id, and then we add an event listener with the addEventListener method. It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
 ---
 Callback hell:-
-> [https://www.freecodecamp.org/news/how-to-deal-with-nested-callbacks-and-avoid-callback-hell-1bc8dc4a2012/]
+> https://www.freecodecamp.org/news/how-to-deal-with-nested-callbacks-and-avoid-callback-hell-1bc8dc4a2012/
 ---
  ** Explain the concept of the callback hell and how it can be mitigated.
 Callback hell, also known as "pyramid of doom," refers to a situation in asynchronous programming where multiple nested 
