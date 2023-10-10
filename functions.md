@@ -83,8 +83,9 @@ document.queryselector("#callback-btn")
 ---
 Callback hell:-
 >> Callback Hell
-```
 $${\color{green}
+```
+
 function fetchDataFromServer(callback) {
   setTimeout(function () {
     const serverData = "Data from the server";
@@ -114,8 +115,9 @@ fetchDataFromServer(function (data) {
     });
   });
 });
-}$$
+
 ```
+}$$
 >> Resolve Callback using promise chain:
 ```
 function fetchDataFromServer() {
