@@ -39,7 +39,7 @@ How can you create a copy of an existing function with a specific context using 
 > A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.
 ----------------------------------------------------------------------------------------------------------------
 ### How do you define a function in JavaScript?
-the function keyword followed by the function name, a set of parentheses for parameters, 
+> the function keyword followed by the function name, a set of parentheses for parameters, 
     and a pair of curly braces to enclose the function body. 
 
 function functionName(parameters) {
@@ -47,20 +47,20 @@ function functionName(parameters) {
 }
 --------------------------------------------------------------------------------------------------------------------
 ### How do you call a function?
-functionName(arguments);
+> functionName(arguments);
 ----------------------------------------------------------------------------------------------------------------------
 ### What are parameters and arguments in a function?
-Parameters are variable names defined in the function's declaration. while arguments are the values passed to a function when it's called.
+> Parameters are variable names defined in the function's declaration. while arguments are the values passed to a function when it's called.
 ----------------------------------------------------------------------------------------------------------------------
 ### How can you return a value from a function?
-Use the return statement:
+> Use the return statement:
 
 function add(a, b) {
     return a + b;
 }
 ----------------------------------------------------------------------------------------------------------------------
 ### What is a callback function? How is it used in JavaScript?
-In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes.
+> In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes.
 So, we can also pass functions as parameters to other functions and call them inside the outer functions.
 ```
 function print(callback) {  
