@@ -42,9 +42,9 @@ How can you create a copy of an existing function with a specific context using 
 > the function keyword followed by the function name, a set of parentheses for parameters, 
     and a pair of curly braces to enclose the function body. 
 
-function functionName(parameters) {
+`function functionName(parameters) {
     // Function body
-}
+}`
 --------------------------------------------------------------------------------------------------------------------
 ### How do you call a function?
 > functionName(arguments);
@@ -55,9 +55,9 @@ function functionName(parameters) {
 ### How can you return a value from a function?
 > Use the return statement:
 
-function add(a, b) {
+`function add(a, b) {
     return a + b;
-}
+}`
 ----------------------------------------------------------------------------------------------------------------------
 ### What is a callback function? How is it used in JavaScript?
 > In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes.
