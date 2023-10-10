@@ -80,45 +80,6 @@ document.queryselector("#callback-btn")
 ```
 > So here we select the button first with its id, and then we add an event listener with the addEventListener method. It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
 ---
-  ** Asynchronous Operations:
-When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
-        what should happen once the operation is completed. This helps avoid blocking the main thread of execution.
-function fetchData(callback) {
-  // Simulating fetching data asynchronously
-  setTimeout(() => {
-    const data = "Some fetched data";
-    callback(data); // Execute the callback function with the data
-  }, 1000);
-}
-function handleFetchedData(data) {
-  console.log("Received data:", data);
-}
-fetchData(handleFetchedData); // Pass the callback to fetchData
-
-   ** Event Handling:
-Callbacks are commonly used to respond to user interactions or other events. For example, in browser programming, 
-       you can attach callback functions to event listeners.
-
-const button = document.querySelector("button");
-
-function buttonClickHandler() {
-  console.log("Button clicked!");
-}
-button.addEventListener("click", buttonClickHandler); // Attach the callback
-
-   ** Control Flow:
-Callbacks can also be used to control the flow of execution in certain situations, such as in functions that involve
-       conditional or iterative behavior.
-
-function performTask(task, callback) {
-  console.log("Performing task:", task);
-  callback(); // Execute the callback after performing the task
-}
-function afterTaskCallback() {
-  console.log("Task completed.");
-}
-performTask("Some task", afterTaskCallback); // Pass the callback to performTask
-
  ** Explain the concept of the callback hell and how it can be mitigated.
 Callback hell, also known as "pyramid of doom," refers to a situation in asynchronous programming where multiple nested 
      callback functions make the code difficult to read, understand, and maintain. This occurs when asynchronous operations 
