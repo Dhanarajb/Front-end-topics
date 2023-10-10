@@ -40,6 +40,15 @@ function print(callback) {
 
 > Callbacks make sure that a function is not going to run before a task is completed but will run right after the task has completed. It helps us develop asynchronous JavaScript code and keeps us safe from problems and errors.
 
+```
+const message = function() {  
+    console.log("This message is shown after 3 seconds");
+}
+ 
+setTimeout(message, 3000);
+
+```
+------
   ** Asynchronous Operations:
 When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
         what should happen once the operation is completed. This helps avoid blocking the main thread of execution.
