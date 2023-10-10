@@ -35,10 +35,10 @@ How is the value of this determined in a regular function and an arrow function?
 How can you create a copy of an existing function with a specific context using the bind method?
 
 ---------------------------------------------------------------------------------------------------------------
-#### What is a function in JavaScript?
+### What is a function in JavaScript?
 A function in JavaScript is a block of code that can be defined and executed, either when it is called or in response to an event.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
-#### How do you define a function in JavaScript?
+### How do you define a function in JavaScript?
 the function keyword followed by the function name, a set of parentheses for parameters, 
     and a pair of curly braces to enclose the function body. 
 
@@ -46,23 +46,28 @@ function functionName(parameters) {
     // Function body
 }
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
-3. How do you call a function?
+### How do you call a function?
 functionName(arguments);
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
-4. What are parameters and arguments in a function?
+### What are parameters and arguments in a function?
 Parameters are variable names defined in the function's declaration. while arguments are the values passed to a function when it's called.
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
-5. How can you return a value from a function?
+### How can you return a value from a function?
 Use the return statement:
 
 function add(a, b) {
     return a + b;
 }
 -------------------------------------------------------------------------------------------------------------------------👇📚📄
-6. What is a callback function? How is it used in JavaScript?
+### What is a callback function? How is it used in JavaScript?
 In JavaScript, functions are objects. Can we pass objects to functions as parameters? Yes.
-
 So, we can also pass functions as parameters to other functions and call them inside the outer functions.
+```
+function print(callback) {  
+    callback();
+}
+
+```
 
   ** Asynchronous Operations:
 When dealing with asynchronous tasks like fetching data from a server or reading a file, callbacks allow you to specify 
