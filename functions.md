@@ -69,6 +69,7 @@ setTimeout(() => {
 ---
 ### What about Events?
 > JavaScript is an event-driven programming language. We also use callback functions for event declarations. For example, let’s say we want users to click on a button:
+
 ```
 <button id="callback-btn">Click here</button>
 `This time we will see a message on the console only when the user clicks on the button:`
@@ -81,6 +82,76 @@ document.queryselector("#callback-btn")
 > So here we select the button first with its id, and then we add an event listener with the addEventListener method. It takes 2 parameters. The first one is its type, “click”, and the second parameter is a callback function, which logs the message when the button is clicked.
 ---
 Callback hell:-
+>> Callback Hell
+```
+function fetchDataFromServer(callback) {
+  setTimeout(function () {
+    const serverData = "Data from the server";
+    callback(serverData);
+  }, 1000); // Simulating a 1-second delay
+}
+
+function processServerData(data, callback) {
+  setTimeout(function () {
+    const processedData = data.toUpperCase();
+    callback(processedData);
+  }, 1000); // Simulating a 1-second delay
+}
+
+function displayData(data, callback) {
+  setTimeout(function () {
+    console.log("Displaying data: " + data);
+    callback();
+  }, 1000); // Simulating a 1-second delay
+}
+
+// Nested callbacks to fetch, process, and display data
+fetchDataFromServer(function (data) {
+  processServerData(data, function (processedData) {
+    displayData(processedData, function () {
+      console.log("All done!");
+    });
+  });
+});
+
+```
+>> Resolve Callback using promise chain:
+```
+function fetchDataFromServer() {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
+      const serverData = "Data from the server";
+      resolve(serverData);
+    }, 1000);
+  });
+}
+
+function processServerData(data) {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
+      const processedData = data.toUpperCase();
+      resolve(processedData);
+    }, 1000);
+  });
+}
+
+function displayData(data) {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
+      console.log("Displaying data: " + data);
+      resolve();
+    }, 1000);
+  });
+}
+
+// Using Promises to chain asynchronous operations
+fetchDataFromServer()
+  .then(processServerData)
+  .then(displayData)
+  .then(function () {
+    console.log("All done!");
+  });
+```
 > https://www.freecodecamp.org/news/how-to-deal-with-nested-callbacks-and-avoid-callback-hell-1bc8dc4a2012/
 ---
  ** Explain the concept of the callback hell and how it can be mitigated.
