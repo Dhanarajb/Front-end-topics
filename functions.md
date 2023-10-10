@@ -83,7 +83,7 @@ document.queryselector("#callback-btn")
 ---
 Callback hell:-
 >> Callback Hell
-$${\color{green}
+
 ```
 
 function fetchDataFromServer(callback) {
@@ -117,7 +117,7 @@ fetchDataFromServer(function (data) {
 });
 
 ```
-}$$
+
 >> Resolve Callback using promise chain:
 ```
 function fetchDataFromServer() {
