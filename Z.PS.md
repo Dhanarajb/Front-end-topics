@@ -25,3 +25,14 @@ console.log(reverse('Dhanaraj'));
 })('dhanaraj');
 ```
 ---
+### Reverse Integer
+```
+const reverInt=(n)=>{
+  return (n.toString().split('').reverse().join(''))
+}
+console.log({
+  testcase1:reverInt(51),
+  testcase2:reverInt(-342),
+  testcase2:reverInt(500)
+})
+```
