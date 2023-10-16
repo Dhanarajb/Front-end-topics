@@ -14,6 +14,24 @@ function reverse(str) {
 }
 console.log(reverse('Dhanaraj'));
 ```
+> **_DRYRUN:_**
+
+> str is initially 'Dhanaraj'.
+
+> The split('') method is used to split the string into an array of characters: ['D', 'h', 'a', 'n', 'a', 'r', 'a', 'j'].
+Now, the reduce method is applied to this array:
+
+> **rev** is the accumulator that starts as an empty string.
+> **char** is the current character in the array.
+
+> - Iteration 1: rev is an empty string, and char is 'D'. The result of the first iteration is 'D' + '' (empty rev), which is 'D'.
+> - Iteration 2: rev is 'D', and char is 'h'. The result is 'h' + 'D', which is 'hD'.
+> - Iteration 3: rev is 'hD', and char is 'a'. The result is 'a' + 'hD', which is 'ahD'.
+> - Iteration 4: rev is 'ahD', and char is 'n'. The result is 'n' + 'ahD', which is 'nahD'.
+> - Iteration 5: rev is 'nahD', and char is 'a'. The result is 'a' + 'nahD', which is 'anahD'.
+> - Iteration 6: rev is 'anahD', and char is 'r'. The result is 'r' + 'anahD', which is 'ranahD'.
+> - Iteration 7: rev is 'ranahD', and char is 'a'. The result is 'a' + 'ranahD', which is 'aranahD'.
+> - Iteration 8: rev is 'aranahD', and char is 'j'. The result is 'j' + 'aranahD', which is 'jaranahD'.
 ---
 ```
 
