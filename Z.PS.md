@@ -8,6 +8,7 @@ const rever = (str) => {
 rever("apple com");
 ```
 > **_DRYRUN:_**
+> 
 > The rever function is called with the input string "apple com".
 
 > Inside the function:
