@@ -7,6 +7,18 @@ const rever = (str) => {
 };
 rever("apple com");
 ```
+> **_DRYRUN:_**
+> The rever function is called with the input string "apple com".
+
+> Inside the function:
+
+> str is "apple com".
+> - str.split('') splits the string into an array of characters: ['a', 'p', 'p', 'l', 'e', ' ', 'c', 'o', 'm'].
+> - The reverse() method is applied to the array, reversing its order: ['m', 'o', 'c', ' ', 'e', 'l', 'p', 'p', 'a'].
+
+> The join('') method is used to join the characters in the reversed array back into a single string, without any spaces between them: "moc elppa".
+
+> The result, "moc elppa", is stored in the arr variable.
 ---
 ```
 function reverse(str) {
