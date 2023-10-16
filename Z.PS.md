@@ -16,7 +16,7 @@ console.log(reverse('Dhanaraj'));
 ```
 ---
 ```
-```
+
 (function (str) {
   let rever = '';
   for (let charavter of str) {
@@ -41,7 +41,7 @@ Iteration 6: charavter is 'r'. rever becomes 'ranahd'.
 Iteration 7: charavter is 'a'. rever becomes 'aranahd'.
 Iteration 8: charavter is 'j'. rever becomes 'jaranahd'.
 After the loop completes, it logs the value of rever to the console, which is the reversed string: 'jaranahd'.
-```
+
 ```
 ---
 ### Reverse Integer
