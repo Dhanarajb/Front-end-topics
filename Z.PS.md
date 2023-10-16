@@ -26,13 +26,10 @@ console.log(reverse('Dhanaraj'));
 })('dhanaraj');
 ```
 ```
-> The code defines an immediately invoked function expression (IIFE) that takes one argument str. It's an anonymous function that reverses the input string.
-
-> Inside the function, it declares a variable rever and initializes it as an empty string.
-
-> It then enters a for...of loop to iterate through each character in the input string str.
-
-> Iteration 1: charavter is 'd'. rever becomes 'd'.
+> **_NOTE:_** The code defines an immediately invoked function expression (IIFE) that takes one argument str. It's an anonymous function that reverses the input string.
+Inside the function, it declares a variable rever and initializes it as an empty string.
+It then enters a for...of loop to iterate through each character in the input string str.
+Iteration 1: charavter is 'd'. rever becomes 'd'.
 Iteration 2: charavter is 'h'. rever becomes 'hd'.
 Iteration 3: charavter is 'a'. rever becomes 'ahd'.
 Iteration 4: charavter is 'n'. rever becomes 'nahd'.
