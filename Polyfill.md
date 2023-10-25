@@ -11,5 +11,5 @@ Array.prototype.myforEach = function (cb) {
     cb(this[i]);
   }
 };
-arr.myforEach(printNum); explain dryrun
+arr.myforEach(printNum); 
 ```
