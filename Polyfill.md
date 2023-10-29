@@ -75,3 +75,30 @@ const acc = arr.MyReduce((acc, value) => acc + value, 0);
 console.log(acc);
 ```
 > Reduce processes the elements of an array to produce a single value, such as the sum of all elements, the maximum value, or a custom accumulation.
+---
+#### Call
+> Invoke the function with a this context and argument provided individual
+```
+Function.prototype.MyCall = function (obj = {}, ...args) {
+  obj.fn = this;
+  obj.fn(...args);
+};
+
+const Person = {
+  fname: 'dhanu',
+  lname: 'Tom',
+  fullName: function () {
+    console.log(`${this.fname} ${this.lname}`);
+  },
+};
+
+Person.fullName();
+
+const Person2 = {
+  fname: 'tom',
+  lname: 'sweet',
+};
+
+Person.fullName.MyCall(Person2);
+```
+---
