@@ -56,4 +56,5 @@ Array.prototype.MyMap = function (cb) {
 const res = arr.MyMap((el) => el < 3);
 console.log(res);
 ```
+> The filter method in JavaScript creates a new array without changing the original one and can be used along with other array methods.
 ---
