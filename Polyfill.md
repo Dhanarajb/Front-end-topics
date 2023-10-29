@@ -102,3 +102,29 @@ const Person2 = {
 Person.fullName.MyCall(Person2);
 ```
 ---
+#### Apply
+> Invoke the function with a this context and argument pass as an array
+```
+Function.prototype.MyApply = function (obj = {}, args = []) {
+  obj.fn = this;
+  obj.fn(...args);
+};
+
+const Person = {
+  fname: 'dhanu',
+  lname: 'Tom',
+  fullName: function (age) {
+    console.log(`${this.fname} ${this.lname} ${age}`);
+  },
+};
+
+Person.fullName();
+
+const Person2 = {
+  fname: 'tom',
+  lname: 'sweet',
+};
+
+Person.fullName.MyApply(Person2, [26]);
+```
+---
