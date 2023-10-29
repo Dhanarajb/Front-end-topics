@@ -1,4 +1,7 @@
 #### ForEach
+
+> when you want to perform some operation on each element of an array without creating new array.
+
 ```
 let arr = [1, 2, 3, 4, 5];
 
