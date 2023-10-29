@@ -37,3 +37,23 @@ const res = arr.MyMap((el) => el * 3);
 console.log(res);
 ```
 > The map method in JavaScript is chainable and produces a new array, making it an immutable operation.
+---
+#### Filter
+
+> Get an array of elements that satisfied a conditions.
+```
+let arr = [1, 2, 3, 4, 5];
+
+Array.prototype.MyMap = function (cb) {
+  let res = [];
+  for (let i = 0; i < this.length; i++) {
+    if (cb(this[i])) {
+      res.push(this[i]);
+    }
+  }
+  return res;
+};
+const res = arr.MyMap((el) => el < 3);
+console.log(res);
+```
+---
