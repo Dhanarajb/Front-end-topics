@@ -127,4 +127,26 @@ const Person2 = {
 
 Person.fullName.MyApply(Person2, [26]);
 ```
+#### Bind
+> Bind create new function and return the function with newly bound this context. If attaches the value of this passed as an argument to the function and return the function
+```
+Function.prototype.MyBind = function (...args) {
+  const obj = this;
+  return function () {
+    obj.call(args[0]);
+  };
+};
+
+const Person = {
+  fname: 'dhanu',
+  lname: 'Tom'
+};
+
+const Details =function () {
+  console.log(`${this.fname} ${this.lname}`);
+},
+
+const printDetails = Details.MyBind(Person)
+console.log(printDetails(26))
+```
 ---
