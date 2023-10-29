@@ -58,3 +58,20 @@ console.log(res);
 ```
 > The filter method in JavaScript creates a new array without changing the original one and can be used along with other array methods.
 ---
+
+#### Reduce
+> Method execute the provide the function for each value of the array. The return value of the function is stored in an accumulator.
+```
+let arr = [1, 2, 3, 4, 5];
+
+Array.prototype.MyReduce = function (cb, init) {
+  let acc = init;
+  for (let i = 0; i < this.length; i++) {
+    acc = acc ? cb(acc, this[i]) : this[i];
+  }
+  return acc;
+};
+const acc = arr.MyReduce((acc, value) => acc + value, 0);
+console.log(acc);
+```
+> Reduce processes the elements of an array to produce a single value, such as the sum of all elements, the maximum value, or a custom accumulation.
