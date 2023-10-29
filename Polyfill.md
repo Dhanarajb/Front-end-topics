@@ -16,3 +16,6 @@ Array.prototype.myforEach = function (cb) {
 };
 arr.myforEach(printNum); 
 ```
+> The forEach method doesn't change the original array, and it returns undefined. It's primarily used for iteration and doesn't produce a new array.
+
+----
