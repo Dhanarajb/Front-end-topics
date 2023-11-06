@@ -1,7 +1,8 @@
 #### What is the purpose of SASS (Syntactically Awesome Style Sheets), and how does it differ from traditional CSS?
 
-> SASS is a CSS preprocessor that extends the capabilities of traditional CSS, providing a more structured and maintainable way to write styles. In a React project, using SASS helps by allowing the creation of modular and reusable styles. With features like variables, nesting, and mixins, SASS enables a more organized and efficient approach to styling components. This is particularly beneficial in large React applications where styling can become complex.
-
+> SASS is like a helper for CSS, making it easier to write and organize styles in a React project.
+> It offers useful features like variables and nesting to keep styles tidy.
+> This is especially handy in big React apps with lots of styling needs.
 #### How do you apply code splitting and lazy loading to improve the performance of a web application in a React project?
 
 > In a React application, you can leverage code splitting and lazy loading by using dynamic imports. For example, when using React's React.lazy and Suspense API, you can dynamically load components only when they are needed. This reduces the initial bundle size and speeds up the initial page load. Code splitting ensures that only the necessary code is sent to the browser when a specific route or component is accessed, resulting in improved performance.
