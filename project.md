@@ -1,2 +1,2 @@
 #### Introdution
-> The project was about making a set of web parts similar to Material UI using React. We wanted these parts to be standard and flexible, so it'd be easy for everyone to build things for the front of our apps in the same way.
+> The project wanted to make a website that had parts anyone could use over and over, like Material UI but with React. Its aim was to create a consistent and flexible system for building things on the front of different apps.
