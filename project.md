@@ -9,3 +9,6 @@
 
 #### Challenges
 >It's tough to make things both flexible and consistent. We want them to adjust but stay the same in style. Planning and feedback make the design better. It's a bit like juggling—making different things work together while looking like they match.
+
+#### Solutions
+>We focused on detailed documentation, maintaining uniform coding practices, and ensuring ongoing communication among teams. Our goal was to keep all components working and looking the same within a set framework while allowing some adjustments to suit specific needs. This approach aimed to balance consistency and adaptability, ensuring that changes were made within a controlled structure. in simple
