@@ -6,3 +6,6 @@
 
 #### My Role
 >In my role as a front-end developer, I took charge of creating and refining particular web components, prioritizing their responsiveness, compatibility, and seamless integration within our design system. I actively collaborated with both design and back-end teams to ensure a consistent standard and coherence across all components.
+
+#### Challenges
+>It's tough to make things both flexible and consistent. We want them to adjust but stay the same in style. Planning and feedback make the design better. It's a bit like juggling—making different things work together while looking like they match.
