@@ -3,3 +3,6 @@
 
 #### Key Features
 > The main things were a bunch of flexible web parts made with React, just like Material UI. They made things look and work the same, helping us build different interactive stuff more easily.
+
+#### My Role
+>In my role as a front-end developer, I took charge of creating and refining particular web components, prioritizing their responsiveness, compatibility, and seamless integration within our design system. I actively collaborated with both design and back-end teams to ensure a consistent standard and coherence across all components.
