@@ -3,37 +3,26 @@
 >
 > HTML
 > ```
->  <input type="text" id="searchInput" placeholder="Type to search">
+ <button onclick="getData()">click Throtle</button>
 > ```
 > Javascript
 ```
-const throttleSearch = (searchFunction, delay) => {
-      let timeoutId;
+let count = 0;
 
-      return (...args) => {
-        const context = this;
+let aplicalled;
+const throttle = (fn, d) => {
+  if (aplicalled) return;
+  aplicalled = true;
+  setTimeout(() => {
+    fn();
+    aplicalled = false;
+  }, d);
+};
 
-        if (!timeoutId) {
-          timeoutId = setTimeout(() => {
-            searchFunction.apply(context, args);
-            timeoutId = null;
-          }, delay);
-        }
-      };
-    };
+const getData = () => {
+  throttle(() => {
+    console.log("email sent...", count++), 500;
+  }, 500);
+};
 
-    // Real-case scenario: Throttle the function handling search
-    const performSearch = query => {
-      // Simulate searching logic (replace this with your actual search functionality)
-      console.log("Searching for:", query);
-    };
-
-    const throttledSearch = throttleSearch(performSearch, 500);
-
-    // Attach the throttled function to the search input field
-    const searchInput = document.getElementById("searchInput");
-    searchInput.addEventListener("input", event => {
-      const searchTerm = event.target.value;
-      throttledSearch(searchTerm);
-    });
 ```
