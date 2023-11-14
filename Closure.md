@@ -43,7 +43,8 @@ console.log("Current Count:", counter.getCount()); // Output: Current Count: 1 I
 ```
 The createCounter function is called to create a counter instance. Inside createCounter, a private variable count is defined, and three functions (increment, decrement, and getCount) are defined within the same scope. These functions have access to the count variable because of the closure. They can read and modify the count variable, but the count variable is not accessible from outside the createCounter function. The createCounter function returns an object with references to the public functions, providing a controlled way to interact with the private count variable. This is a real-world example of how closures can be used to encapsulate data and behavior, allowing you to create objects with private variables and controlled access to those variables.
 
-🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 1:
+---
+Question 1:
 
 function outer() { var x = 10;
 
@@ -51,7 +52,8 @@ function inner() { console.log(x); }
 
 return inner; }
 
-var closureFn = outer(); closureFn(); Answer: Output: 10 Explanation: The inner function inner() remembers the value of x from its containing outer() function due to closure. When closureFn is invoked, it logs the value of x, which is 10. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 2:
+var closureFn = outer(); closureFn(); Answer: Output: 10 Explanation: The inner function inner() remembers the value of x from its containing outer() function due to closure. When closureFn is invoked, it logs the value of x, which is 10. ---
+Question 2:
 
 function counter() { var count = 0;
 
@@ -59,7 +61,8 @@ return function() { return ++count; }; }
 
 var increment = counter(); console.log(increment()); // Output: 1 console.log(increment()); // Output: 2 Answer: Output:
 
-Copy code 1 2 Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, allowing it to increment and remember the count. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 3:
+Copy code 1 2 Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, allowing it to increment and remember the count. ---
+Question 3:
 
 function outer() { var name = "Alice";
 
@@ -69,11 +72,13 @@ name = "Bob";
 
 return inner; }
 
-var closureFn = outer(); closureFn(); Answer: Output: Bob Explanation: The closure preserves the most recent value of name from its outer function scope, which is "Bob". 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 4:
+var closureFn = outer(); closureFn(); Answer: Output: Bob Explanation: The closure preserves the most recent value of name from its outer function scope, which is "Bob". ---
+Question 4:
 
 for (var i = 1; i <= 3; i++) { setTimeout(function() { console.log(i); }, 1000); } Answer: Output:
 
-Copy code 4 4 4 Explanation: Due to closure, the anonymous function inside setTimeout retains a reference to the variable i. After the loop finishes, i becomes 4, so all three timeouts print 4. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 5:
+Copy code 4 4 4 Explanation: Due to closure, the anonymous function inside setTimeout retains a reference to the variable i. After the loop finishes, i becomes 4, so all three timeouts print 4. ---
+Question 5:
 
 function createFunctions() { var result = [];
 
@@ -83,11 +88,13 @@ return result; }
 
 var functions = createFunctions(); functions0; // Output: 3 functions1; // Output: 3 functions2; // Output: 3 Answer: Output:
 
-Copy code 3 3 3 Explanation: The closures inside the result array retain a reference to the same i variable. After the loop completes, i is 3, so all three functions print 3. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 6:
+Copy code 3 3 3 Explanation: The closures inside the result array retain a reference to the same i variable. After the loop completes, i is 3, so all three functions print 3. ---
+Question 6:
 
 function outer(x) { return function(y) { return x + y; }; }
 
-var addFive = outer(5); console.log(addFive(3)); // Output: 8 Answer: Output: 8 Explanation: The inner function forms a closure over the x parameter of the outer function, allowing it to access and use x even after the outer function has finished. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 7:
+var addFive = outer(5); console.log(addFive(3)); // Output: 8 Answer: Output: 8 Explanation: The inner function forms a closure over the x parameter of the outer function, allowing it to access and use x even after the outer function has finished. ---
+Question 7:
 
 function outer() { var x = 10;
 
@@ -97,19 +104,23 @@ x = 20;
 
 return inner; }
 
-var closureFn = outer(); closureFn(); Answer: Output: 20 Explanation: The closure retains the updated value of x from its containing outer() function scope, which is 20. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 8:
+var closureFn = outer(); closureFn(); Answer: Output: 20 Explanation: The closure retains the updated value of x from its containing outer() function scope, which is 20. ---
+Question 8:
 
 function makeCounter() { var count = 0;
 
 return { increment: function() { count++; }, getCount: function() { return count; } }; }
 
-var counter = makeCounter(); counter.increment(); counter.increment(); console.log(counter.getCount()); // Output: 2 Answer: Output: 2 Explanation: The closure maintains the state of the count variable across multiple calls to increment(), resulting in a count of 2. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️
+var counter = makeCounter(); counter.increment(); counter.increment(); console.log(counter.getCount()); // Output: 2 Answer: Output: 2 Explanation: The closure maintains the state of the count variable across multiple calls to increment(), resulting in a count of 2. ---
 
-🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 9:
+
+---
+Question 9:
 
 function greeting(name) { return function(message) { return "Hello, " + name + "! " + message; }; }
 
-var greetAlice = greeting("Alice"); console.log(greetAlice("How are you?")); // Output: Hello, Alice! How are you? Answer: Output: Hello, Alice! How are you? Explanation: The inner function forms a closure over the name parameter of the outer function, allowing it to access name while being called with a different message. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 10:
+var greetAlice = greeting("Alice"); console.log(greetAlice("How are you?")); // Output: Hello, Alice! How are you? Answer: Output: Hello, Alice! How are you? Explanation: The inner function forms a closure over the name parameter of the outer function, allowing it to access name while being called with a different message. ---
+Question 10:
 
 function outer() { var a = 5;
 
@@ -117,11 +128,13 @@ function inner() { var b = 10; console.log(a + b); }
 
 return inner; }
 
-var closureFn = outer(); closureFn(); // Output: 15 Answer: Output: 15 Explanation: The inner function has access to both a from its containing outer() function scope and b from its own scope, allowing it to calculate and log the sum. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 11:
+var closureFn = outer(); closureFn(); // Output: 15 Answer: Output: 15 Explanation: The inner function has access to both a from its containing outer() function scope and b from its own scope, allowing it to calculate and log the sum. ---
+Question 11:
 
 function createMultiplier(factor) { return function(number) { return factor * number; }; }
 
-var double = createMultiplier(2); console.log(double(5)); // Output: 10 Answer: Output: 10 Explanation: The closure captures the factor parameter from the outer function and uses it to create a function that doubles the given number. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 12:
+var double = createMultiplier(2); console.log(double(5)); // Output: 10 Answer: Output: 10 Explanation: The closure captures the factor parameter from the outer function and uses it to create a function that doubles the given number. ---
+Question 12:
 
 function counter() { var count = 0;
 
@@ -129,7 +142,8 @@ return function() { return count++; }; }
 
 var increment = counter(); console.log(increment()); // Output: 0 console.log(increment()); // Output: 1 Answer: Output:
 
-Copy code 0 1 Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, allowing it to increment and remember the count. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 13:
+Copy code 0 1 Explanation: The closure maintains the count variable's state between multiple invocations of the returned function, allowing it to increment and remember the count. ---
+Question 13:
 
 function outer() { var x = 5;
 
@@ -137,13 +151,15 @@ function inner() { console.log(x); var x = 10; }
 
 return inner; }
 
-var closureFn = outer(); closureFn(); Answer: Output: undefined Explanation: The variable x inside the inner() function is hoisted but not initialized before the console.log(), so it is undefined when logged. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ Question 14:
+var closureFn = outer(); closureFn(); Answer: Output: undefined Explanation: The variable x inside the inner() function is hoisted but not initialized before the console.log(), so it is undefined when logged. ---
+Question 14:
 
 function countdown() { var i; for (i = 5; i >= 0; i--) { setTimeout(function() { console.log(i); }, (5 - i) * 1000); } }
 
 countdown(); Answer: Output:
 
-diff Copy code -1 -1 -1 -1 -1 -1 Explanation: All timeouts share the same closure, and by the time they execute, the loop has finished, and i becomes -1. 🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️🖋️ How do closures affect memory management in JavaScript? with scenario simple
+diff Copy code -1 -1 -1 -1 -1 -1 Explanation: All timeouts share the same closure, and by the time they execute, the loop has finished, and i becomes -1. ---
+How do closures affect memory management in JavaScript? with scenario simple
 
 Sure, let's explore a simplified scenario that demonstrates how closures can affect memory management in JavaScript:
 
