@@ -1,6 +1,5 @@
 ###### Explain the concept of a "closure". 
-> A closure is a function that has access to its own scope, the scope of the outer function, and the global scope. Sure! In simple terms, a closure in JavaScript is like a backpack that an inner function carries. This backpack contains some useful things from its outer function, even after the outer function has finished its job.
-
+> A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function. Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created. A block is also treated as a scope since ES6. Since JavaScript is event-driven so closures are useful as it helps to maintain the state between events.
 > Imagine you have a lunchbox (inner function) that can still hold items from your kitchen (outer function) even after you leave the kitchen. You can take your lunchbox to work and enjoy the food from your kitchen, even though you're not in the kitchen anymore. This connection between your lunchbox and kitchen is what we call a "closure."
 
 > Closures enable data encapsulation, information hiding, and the creation of private variables within functions.
@@ -21,15 +20,20 @@ Example: A Counter with Private Variables
 
 Imagine you are building a counter application, and you want to keep the count variable private. You want to expose only a set of functions to interact with the counter value, ensuring that the count can't be directly modified from outside the functions. This can be achieved using closures:
 ```
-function createCounter() { // Private variable let count = 0;
+function createCounter() { // Private variable
 
-// Public functions to interact with the count function increment() { count++; }
+let count = 0;
+
+// Public functions to interact with the count
+
+function increment() { count++; }
 
 function decrement() { count--; }
 
 function getCount() { return count; }
 
-// Return an object with public functions return { increment, decrement, getCount }; }
+// Return an object with public functions
+return { increment, decrement, getCount }; }
 
 // Create a counter instance const counter = createCounter();
 
