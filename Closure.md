@@ -1,6 +1,6 @@
 ###### Explain the concept of a "closure". 
 > A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function. Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created. A block is also treated as a scope since ES6. Since JavaScript is event-driven so closures are useful as it helps to maintain the state between events.
-> Imagine you have a lunchbox (inner function) that can still hold items from your kitchen (outer function) even after you leave the kitchen. You can take your lunchbox to work and enjoy the food from your kitchen, even though you're not in the kitchen anymore. This connection between your lunchbox and kitchen is what we call a "closure."
+
 
 > Closures enable data encapsulation, information hiding, and the creation of private variables within functions.
 
