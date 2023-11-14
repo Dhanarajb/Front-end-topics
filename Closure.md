@@ -3,6 +3,23 @@
 
 
 > Closures enable data encapsulation, information hiding, and the creation of private variables within functions.
+
+#### Application
+###### Implementing Private Variables and Methods
+
+> Closures can be used to emulate private variables and methods in JavaScript, which is not directly supported by the language. For example, consider a simple counter function that keeps track of the number of times it has been called:
+
+```
+function counter() {
+  let count = 0;
+  return function() {
+    count++;
+    return count;
+  };
+}
+```
+
+> In this example, the count variable is private to the inner function, which can only be accessed from within the closure. This prevents direct modification of the count variable from outside the closure, ensuring data encapsulation and enhanced code security.
 ---
 #### Question 1:
 ```
