@@ -6,8 +6,8 @@
 >  <input type="text" id="searchInput" placeholder="Type to search">
 > ```
 > Javascript
-> ```
-> const throttleSearch = (searchFunction, delay) => {
+```
+const throttleSearch = (searchFunction, delay) => {
       let timeoutId;
 
       return (...args) => {
