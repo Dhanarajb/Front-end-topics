@@ -17,6 +17,11 @@ const closure2=createCounter()
 closure2()
 
 ```
+> Encapsulation is bundling or wrapping of data
+and function together to provide data security/
+data privacy.
+
+
 ###### Benefits of Closures:
 > 1. Closure can be used for data modification with data privacy(encapsulation)
 > 2. Persistent Data and State- Each time createCounter() iscalled, it creates a new closure with its own separate count variable.
