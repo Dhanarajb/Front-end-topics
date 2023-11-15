@@ -1,6 +1,22 @@
 ###### Explain the concept of a "closure". 
 > A closure is a feature of JavaScript that allows inner functions to access the outer scope of a function. Closure helps in binding a function to its outer boundary and is created automatically whenever a function is created. A block is also treated as a scope since ES6. Since JavaScript is event-driven so closures are useful as it helps to maintain the state between events.
 
+```
+const createCounter=()=>{
+  let counter = 0;
+  return function(){
+    counter++
+    console.log(counter)
+  }
+}
+const closure1= createCounter()
+closure1()
+closure1()
+
+const closure2=createCounter()
+closure2()
+
+```
 ###### Benefits of Closures:
 > 1. Closure can be used for data modification with data privacy(encapsulation)
 > 2. Persistent Data and State- Each time createCounter() iscalled, it creates a new closure with its own separate count variable.
