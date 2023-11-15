@@ -26,7 +26,8 @@ data privacy.
 > 1. Closure can be used for data modification with data privacy(encapsulation)
 > 2. Persistent Data and State- Each time createCounter() iscalled, it creates a new closure with its own separate count variable.
 > 3. Code Reusability- The closure returned by createCounter() is a reusable counter function.
-
+###### Limitations
+> Memory Leaks - If closures are not properly managed, they can hold onto unnecessary memory because Closures retain references to the variables they access.
 
 > Closures enable data encapsulation, information hiding, and the creation of private variables within functions.
 
