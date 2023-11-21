@@ -23,7 +23,7 @@ function greet() {
 greet(); // Output: Hello from global scope
 ```
 ---
-#### **In strict mode: **When you put code inside a strict mode block, this has a different meaning in regular functions. In strict mode, this refers to undefined inside regular functions.
+#### **In strict mode:** When you put code inside a strict mode block, this has a different meaning in regular functions. In strict mode, this refers to undefined inside regular functions.
 ```
 "use strict";
 
