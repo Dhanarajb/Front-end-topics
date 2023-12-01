@@ -26,3 +26,18 @@
  - Creating a reusable library with its own dependencies
  - Building a progressive web app with offline support
  - Converting a legacy application to a modern JavaScript framework
+
+
+
+
+
+
+
+---
+Entry: The entry point is the starting point for Webpack's compilation process. It is typically a JavaScript file that imports other modules.
+
+Loader: Loaders are used to transform assets, such as JavaScript, CSS, and images. Webpack comes with a variety of built-in loaders, and you can also create your own custom loaders.
+
+Compiler: The compiler is the core of Webpack. It takes the modules and their dependencies and generates static assets representing those modules.
+
+Bundles: Bundles are the output of Webpack's compilation process. They are typically JavaScript files that contain the compiled code and assets for your application
