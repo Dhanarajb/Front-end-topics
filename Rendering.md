@@ -1,0 +1,2 @@
+### CSR
+> basically website are loaded using the estima CSS chess was data fetched from the server browser render all data render in the HTML file in client side the server send a basics skeleton of HTML file along with the CSS property as well as as function in plants and rendering the browser received the HTML file and load it up to the CSS file but JS function mistake too much time to render depends on the size of the JS function loading time increase accordingly.
