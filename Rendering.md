@@ -12,7 +12,9 @@
 
 > Definition: In server-side routing, when a user navigates to a different URL, a request is sent to the server, and the server responds by sending the appropriate HTML for the requested page.
 > How it works: The entire page is reloaded, and the server generates and sends a new HTML page. The server is responsible for rendering the content based on the URL and sending the complete page to the client.
+
 > Pros: Search engine optimization (SEO) is generally better because search engines can index the complete HTML page.
+
 > Cons: Slower initial page loads as the server has to process each request.
 
 ### Client-Side Routing:
