@@ -2,3 +2,4 @@
 
 - [Javascript](https://github.com/Dhanarajb/Front-end-topics/blob/main/0.Javascript%3F.md)
 - [Executioncontext](https://github.com/Dhanarajb/Front-end-topics/blob/main/1.ExecutionContext.md)
+- [DataType](https://github.com/Dhanarajb/Front-end-topics/blob/main/3.Datatypes.md)
