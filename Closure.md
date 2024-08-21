@@ -2,7 +2,7 @@
 
 ## What is a Closure?
 
-A closure is a feature in JavaScript where an inner function gets access to the outer function's variables even after the outer function has finished executing. This is possible because the inner function maintains a reference to the outer function's scope. 
+When outer function is returns an inner function. inner function is then executed in different scope and inner function continues to maintain access to the outer  function variable even though the outer function no longer exists.
 
 ### Example
 
