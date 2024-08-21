@@ -1,21 +1,26 @@
-###### Explain the concept of a "closure". 
-> When outer function is returns an inner function. inner function is then executed in different scope and inner function continues to maintain access to the outer  function variable even though the outer function no longer exists.
+# Understanding Closures in JavaScript
 
-```
-const createCounter=()=>{
+## What is a Closure?
+
+A closure is a feature in JavaScript where an inner function gets access to the outer function's variables even after the outer function has finished executing. This is possible because the inner function maintains a reference to the outer function's scope. 
+
+### Example
+
+```javascript
+const createCounter = () => {
   let counter = 0;
-  return function(){
-    counter++
-    console.log(counter)
-  }
-}
-const closure1= createCounter()
-closure1()
-closure1()
+  return function() {
+    counter++;
+    console.log(counter);
+  };
+};
 
-const closure2=createCounter()
-closure2()
+const closure1 = createCounter();
+closure1(); // Output: 1
+closure1(); // Output: 2
 
+const closure2 = createCounter();
+closure2(); // Output: 1
 ```
 > Encapsulation is bundling or wrapping of data
 and function together to provide data security/
