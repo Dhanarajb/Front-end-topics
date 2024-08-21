@@ -46,7 +46,7 @@ Closures enable data encapsulation, information hiding, and the creation of priv
 
 ---
 #### Question 1:
-```
+```javascript
 function outer() {
  var x = 10;
 
@@ -63,7 +63,7 @@ Answer: Output: 10 Explanation: The inner function inner() remembers the value o
 ```
 ---
 #### Question 2:
-```
+```javascript
 function counter() {
 var count = 0;
 
@@ -79,7 +79,7 @@ Copy code 1 2 Explanation: The closure maintains the count variable's state betw
 ```
  ---
 #### Question 3:
-```
+```javascript
 function outer() {
 var name = "Alice";
 
@@ -98,7 +98,7 @@ Answer: Output: Bob Explanation: The closure preserves the most recent value of 
 ```
 ---
 #### Question 4:
-```
+```javascript
 for (var i = 1; i <= 3; i++) {
 setTimeout(function() {
 console.log(i);
@@ -109,7 +109,7 @@ Copy code 4 4 4 Explanation: Due to closure, the anonymous function inside setTi
 ```
 ---
 #### Question 5:
-```
+```javascript
 function createFunctions() {
 var result = [];
 
@@ -131,7 +131,7 @@ Copy code 3 3 3 Explanation: The closures inside the result array retain a refer
 ```
 ---
 #### Question 6:
-```
+```javascript
 function outer(x) { 
 return function(y) { 
 return x + y; }; }
@@ -143,7 +143,7 @@ Explanation: The inner function forms a closure over the x parameter of the oute
 ```
 ---
 #### Question 7:
-```
+```javascript
 function outer() {
 var x = 10;
 
@@ -161,7 +161,7 @@ closureFn(); Answer: Output: 20 Explanation: The closure retains the updated val
 ```
 ---
 #### Question 8:
-```
+```javascript
 function makeCounter() {
 var count = 0;
 return {
@@ -181,7 +181,7 @@ console.log(counter.getCount()); // Output: 2 Answer: Output: 2 Explanation: The
 ```
 ---
 #### Question 9:
-```
+```javascript
 function greeting(name) {
 return function(message) {
 return "Hello, " + name + "! " + message;
@@ -193,7 +193,7 @@ console.log(greetAlice("How are you?")); // Output: Hello, Alice! How are you? A
 ```
 ---
 #### Question 10:
-```
+```javascript
 function outer() {
 var a = 5;
 
@@ -208,7 +208,7 @@ var closureFn = outer(); closureFn(); // Output: 15 Answer: Output: 15 Explanati
 ```
 ---
 #### Question 11:
-```
+```javascript
 function createMultiplier(factor) {
 return function(number) {
 return factor * number;
@@ -220,7 +220,7 @@ console.log(double(5)); // Output: 10 Answer: Output: 10 Explanation: The closur
 ```
 ---
 #### Question 12:
-```
+```javascript
 function counter() {
 var count = 0;
 
@@ -235,7 +235,7 @@ Copy code 0 1 Explanation: The closure maintains the count variable's state betw
 ```
 ---
 #### Question 13:
-```
+```javascript
 function outer() {
 var x = 5;
 
