@@ -22,7 +22,7 @@ closure1(); // Output: 2
 const closure2 = createCounter();
 closure2(); // Output: 1
 ```
-# Understanding Encapsulation and Closures
+
 
 ## Encapsulation
 
