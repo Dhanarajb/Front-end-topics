@@ -259,3 +259,7 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 
 **Answer:** "When I was assigned to a project that required using Redux Toolkit for state management, I had no prior experience with it. I dedicated time to understanding the official documentation and worked through several tutorials to get a practical understanding. I also implemented a small, isolated project to experiment with the concepts before applying them to the actual project. This hands-on approach helped me grasp the technology quickly and effectively integrate it into our application."
 
+---
+## How do you ensure cross-browser compatibility in your projects?
+
+**Answer:** "I start by following web standards and using semantic HTML and CSS. During development, I test the application in different browsers, including Chrome, Firefox, Safari, and Edge. I also use tools like BrowserStack for testing on various devices and screen sizes. For CSS, I use vendor prefixes where necessary and rely on libraries like Autoprefixer to handle compatibility issues. Additionally, I make use of feature detection with Modernizr to provide fallbacks for unsupported features."
