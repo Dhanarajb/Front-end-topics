@@ -217,3 +217,25 @@ In a previous project, I had to manage multiple deliverables with tight deadline
 
 "In a previous project, I noticed that the initial architecture could not handle increased traffic effectively. I refactored the code to use a microservices approach, which allowed different parts of the system to scale independently. This change improved performance and made it easier to add new features."
 
+------
+## Example of Handling a Team Conflict
+
+### Situation
+In a past project, our team disagreed on how to build a feature. I set up a meeting where everyone shared their ideas and concerns. We talked about what was best for the project and the users. We then picked the best parts from each idea and combined them. This helped us finish the project successfully and work better as a team.
+
+### Cross-Questions and Answers
+
+#### Question 1: How did you ensure everyone’s ideas were heard?
+**Answer:** "I made sure everyone had a chance to speak by asking each person to present their idea and concerns. I also encouraged open discussion so that everyone could share their thoughts and ask questions. This helped us understand different perspectives and find a common ground."
+
+#### Question 2: How did you decide which aspects of each idea to combine?
+**Answer:** "We evaluated each idea based on how well it met the project's goals and user needs. We discussed the strengths and weaknesses of each approach and looked for commonalities. By weighing these factors, we selected the best parts of each idea to create a solution that was both effective and practical."
+
+#### Question 3: What was the outcome of the combined approach?
+**Answer:** "The combined approach worked well and led to a successful implementation of the feature. It also improved our team’s collaboration and problem-solving skills, as we learned to integrate different perspectives into a cohesive solution."
+
+#### Question 4: How did you handle any remaining disagreements after the meeting?
+**Answer:** "If there were any remaining disagreements, I made sure to address them by discussing them one-on-one or in smaller groups. I also emphasized the importance of our shared goals and how our combined approach would help us achieve them. This helped resolve any lingering issues and maintain team harmony."
+
+#### Question 5: What did you learn from this experience?
+**Answer:** "I learned that involving the whole team in decision-making and valuing everyone’s input can lead to better solutions and stronger team dynamics. It also taught me the importance of clear communication and compromise in overcoming conflicts."
