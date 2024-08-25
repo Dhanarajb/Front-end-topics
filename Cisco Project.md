@@ -28,3 +28,30 @@ The DNA Spaces project benefited users and stakeholders in several ways:
 - **Tailored Solutions:** Customizable dashboards allowed different industries—such as manufacturing, retail, and healthcare—to get data and insights relevant to their specific needs, improving the relevance and usefulness of the information.
 
 - **Better User Experience:** By improving how spaces are managed and used, the platform enhanced overall user experience in various environments, from classrooms to offices, making them more functional and comfortable.
+
+
+----
+
+# Project Architecture
+
+## Frontend
+We use **ReactJS** for the frontend, which is the part of the application that users interact with. ReactJS helps us build the user interface and manage interactions. When users need to view or update data, React sends requests to the backend.
+
+## Backend
+Our backend is built with **Kotlin**. It processes the requests from the React frontend, handles the application’s business logic, and manages communication with the database. Kotlin ensures that data operations and business rules are efficiently executed.
+
+## Database
+For our database, we use **Cassandra**. Cassandra stores all the data for our application, including user information and other content. The backend interacts with Cassandra to retrieve or save data as required.
+
+## How It Works Together
+1. **User Interaction**: When a user interacts with the React frontend (e.g., submitting a form or clicking a button), the frontend sends a request to the Kotlin backend.
+
+2. **Backend Processing**: The Kotlin backend receives the request, processes it, and interacts with Cassandra to manage the data.
+
+3. **Data Handling**: The backend retrieves or updates data in Cassandra and sends the results back to the React frontend.
+
+4. **UI Update**: The React frontend then updates the user interface based on the data received from the backend.
+
+This architecture ensures that the application is responsive and efficiently handles user interactions, data processing, and storage.
+
+
