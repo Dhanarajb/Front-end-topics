@@ -263,3 +263,10 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 ## How do you ensure cross-browser compatibility in your projects?
 
 **Answer:** "I start by following web standards and using semantic HTML and CSS. During development, I test the application in different browsers, including Chrome, Firefox, Safari, and Edge. I also use tools like BrowserStack for testing on various devices and screen sizes. For CSS, I use vendor prefixes where necessary and rely on libraries like Autoprefixer to handle compatibility issues. Additionally, I make use of feature detection with Modernizr to provide fallbacks for unsupported features."
+
+----
+## How do you handle tight deadlines and pressure?
+
+**Answer:** "When faced with tight deadlines, I focus on prioritization and communication. I break down the tasks, identify the most critical ones, and allocate my time accordingly. I also keep the stakeholders informed about the progress and any potential roadblocks. If necessary, I’m open to discussing scope adjustments or seeking additional resources to meet the deadline. I stay calm under pressure by maintaining a clear focus on the objectives and avoiding distractions."
+
+
