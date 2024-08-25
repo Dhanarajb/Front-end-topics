@@ -126,7 +126,7 @@ Imagine a large e-commerce platform with the following features:
 
 When a user navigates to the product catalog, Single SPA dynamically loads Micro Frontend 1 and displays it. If the user then adds items to the cart and navigates to the cart, Single SPA will unload Micro Frontend 1 and load Micro Frontend 2.
 
-Throughout this process, Single SPA manages the routing, ensures smooth transitions, and integrates all micro frontends into a unified experience, even if they use different technologies.
+
 <img width="741" alt="Screenshot 2024-08-25 at 1 07 30 PM" src="https://github.com/user-attachments/assets/c8bfa818-7213-415b-912d-2a5dc580eaef">
 ---
 # Challenging Project: Cisco Spaces Dashboard
@@ -159,6 +159,3 @@ Managing complex state was challenging because it involved keeping track of many
 
 ### How did you ensure the dashboard worked well across different devices?
 I tested the dashboard on various devices and screen sizes and used responsive design techniques to ensure it adjusted properly and looked good everywhere.
-
-
-
