@@ -28,9 +28,9 @@ The DNA Spaces project benefited users and stakeholders in several ways:
 - **Tailored Solutions:** Customizable dashboards allowed different industries—such as manufacturing, retail, and healthcare—to get data and insights relevant to their specific needs, improving the relevance and usefulness of the information.
 
 - **Better User Experience:** By improving how spaces are managed and used, the platform enhanced overall user experience in various environments, from classrooms to offices, making them more functional and comfortable.
-  
+  ```
 <img width="1438" alt="Screenshot 2024-08-25 at 12 47 12 PM" src="https://github.com/user-attachments/assets/65eb10ae-6c76-4b29-86ba-f7fe83b76f2a">
-
+```
 
 ----
 
