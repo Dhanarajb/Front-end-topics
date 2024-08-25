@@ -190,3 +190,30 @@ In cases where priorities conflict, I discuss with stakeholders to understand wh
 ## Can you give an example of a time when your prioritization approach helped you successfully complete a project?
 
 In a previous project, I had to manage multiple deliverables with tight deadlines. By breaking down each project into smaller tasks and regularly reassessing priorities, I was able to meet all deadlines. This approach ensured that all tasks were completed efficiently and to a high standard.
+-------
+# Ensuring Code Maintainability and Scalability
+
+## How do you ensure your code is maintainable and scalable?
+
+"I make sure my code is easy to maintain and scale by following best practices. I write code in small, reusable parts and use guidelines like SOLID principles. I also use tools like ESLint and Prettier to keep the code style consistent. When creating components, I design them so they can be easily updated or expanded in the future. I document my code and keep my git history clean to help other developers understand and work with it more easily."
+
+## 1. How do you handle code reviews and feedback to maintain code quality?
+
+"I take code reviews seriously and view them as an opportunity to improve. I listen carefully to feedback and address any issues or suggestions provided. I also make sure to discuss any significant changes with my team to ensure alignment with best practices and project goals."
+
+## 2. How do you ensure that your code remains scalable as the project grows?
+
+"To ensure scalability, I design components and systems with flexibility in mind. I use design patterns and principles that support easy extension and modification. I also regularly review and refactor code to keep it efficient and adaptable to new requirements."
+
+## 3. What steps do you take to ensure your code is well-documented?
+
+"I document my code by writing clear comments and explanations about what each part does and why certain decisions were made. I also use tools like JSDoc to generate detailed documentation. This helps other developers understand and use the code more effectively."
+
+## 4. How do you manage dependencies and avoid potential issues with third-party libraries?
+
+"I carefully select and evaluate third-party libraries based on their reliability, popularity, and compatibility with our project. I also keep dependencies updated and monitor for any security vulnerabilities or issues. If a library is no longer maintained, I consider alternatives or plan for migration."
+
+## 5. Can you provide an example of how you improved the scalability of a project in the past?
+
+"In a previous project, I noticed that the initial architecture could not handle increased traffic effectively. I refactored the code to use a microservices approach, which allowed different parts of the system to scale independently. This change improved performance and made it easier to add new features."
+
