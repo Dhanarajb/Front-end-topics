@@ -270,3 +270,9 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 **Answer:** "When faced with tight deadlines, I focus on prioritization and communication. I break down the tasks, identify the most critical ones, and allocate my time accordingly. I also keep the stakeholders informed about the progress and any potential roadblocks. If necessary, I’m open to discussing scope adjustments or seeking additional resources to meet the deadline. I stay calm under pressure by maintaining a clear focus on the objectives and avoiding distractions."
 
 
+----
+## What strategies do you use to collaborate with backend developers?
+
+**Answer:** "Collaboration with backend developers is crucial for building cohesive applications. I ensure we have clear and open communication channels, often using tools like Slack and Jira for task management and updates. I participate in regular stand-up meetings to align on goals and progress. I also make sure that the API contracts are well-documented and agreed upon early in the project. By understanding the backend structure and limitations, I can design the front end to integrate seamlessly with the backend services."
+
+
