@@ -254,3 +254,6 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 
 **Answer:** "I start by analyzing the application using tools like Lighthouse and Chrome DevTools to identify performance bottlenecks. Common areas I focus on include optimizing images, minimizing and bundling JavaScript and CSS, and implementing lazy loading for resources. I also ensure that the application follows best practices like reducing DOM size, optimizing rendering paths, and using efficient algorithms for data processing. When working with React, I leverage techniques like memoization and code-splitting to improve performance."
 
+----
+ Can you describe a time when you had to learn a new technology quickly? How did you manage it?
+Answer: "When I was assigned to a project that required using Redux Toolkit for state management, I had no prior experience with it. I dedicated time to understanding the official documentation and worked through several tutorials to get a practical understanding. I also implemented a small, isolated project to experiment with the concepts before applying them to the actual project. This hands-on approach helped me grasp the technology quickly and effectively integrate it into our application."
