@@ -164,3 +164,29 @@ Managing complex state was challenging because it involved keeping track of many
 
 ### How did you ensure the dashboard worked well across different devices?
 I tested the dashboard on various devices and screen sizes and used responsive design techniques to ensure it adjusted properly and looked good everywhere.
+------
+# Task Prioritization and Management
+
+## How do you prioritize your tasks when working on multiple projects?
+
+I prioritize tasks by figuring out what’s most urgent and important. I break projects into smaller tasks and check deadlines and dependencies. I also talk to stakeholders to understand their priorities. This way, I stay focused and make sure everything gets done on time and meets quality standards.
+
+## How do you handle unexpected urgent tasks that come up while you're working on a project?
+
+When unexpected urgent tasks arise, I first assess their impact and urgency. If they are critical, I adjust my schedule to accommodate them. I prioritize these tasks based on their importance and communicate any changes to stakeholders to ensure everyone is aware of the updated timeline.
+
+## How do you ensure that you don't miss any deadlines while juggling multiple projects?
+
+I use a detailed task list and calendar to keep track of deadlines for all projects. Regularly reviewing my progress and adjusting my priorities helps me stay on track. I also set reminders and check in with my team to make sure nothing falls through the cracks.
+
+## What tools or methods do you use to manage your tasks and projects effectively?
+
+I use project management tools like Asana or Trello to organize tasks and track progress. These tools help me visualize deadlines, dependencies, and priorities. I also keep a personal to-do list and use calendar reminders to stay organized.
+
+## How do you handle situations where priorities between projects conflict?
+
+In cases where priorities conflict, I discuss with stakeholders to understand which project has higher urgency or impact. I then adjust my focus accordingly and negotiate deadlines or resources if necessary. Clear communication helps in managing expectations and finding a solution.
+
+## Can you give an example of a time when your prioritization approach helped you successfully complete a project?
+
+In a previous project, I had to manage multiple deliverables with tight deadlines. By breaking down each project into smaller tasks and regularly reassessing priorities, I was able to meet all deadlines. This approach ensured that all tasks were completed efficiently and to a high standard.
