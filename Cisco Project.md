@@ -28,6 +28,8 @@ The DNA Spaces project benefited users and stakeholders in several ways:
 - **Tailored Solutions:** Customizable dashboards allowed different industries—such as manufacturing, retail, and healthcare—to get data and insights relevant to their specific needs, improving the relevance and usefulness of the information.
 
 - **Better User Experience:** By improving how spaces are managed and used, the platform enhanced overall user experience in various environments, from classrooms to offices, making them more functional and comfortable.
+  
+<img width="1438" alt="Screenshot 2024-08-25 at 12 47 12 PM" src="https://github.com/user-attachments/assets/65eb10ae-6c76-4b29-86ba-f7fe83b76f2a">
 
 
 ----
@@ -54,5 +56,8 @@ For our database, we use **Cassandra**. Cassandra stores all the data for our ap
 
 This architecture ensures that the application is responsive and efficiently handles user interactions, data processing, and storage.
 
+<img width="808" alt="Screenshot 2024-08-25 at 12 43 41 PM" src="https://github.com/user-attachments/assets/50854f37-8965-49ba-9be4-e86b68870366">
+
 ![Project Architecture Diagram](https://mermaid-js.github.io/mermaid-live-editor/#/edit/Z3JhcGggVERcbkF9IFJlYWN0SlMgRnJvbnRlbmQgfCB8IEEoVVNFUiBJbnRlcmFjdGlvbilbWmhPIFJlYWN0SlMgRnJvbnRlbmRdIFxuQiAtLT4gQyhjYXNhbmRyYSBkYXRhYmFzZSBhbmQgU2VydmVyYXRpb24gQ29tcGxldCBpbmZvKSBcblxuUCAtLT4gQmFzZSBhbmQgU2VydmVyYXRpb24gQ29tcGxldCBhbmQgQ2Fzc2FuZHJhIGRhdGFiYXNlIHByb3BlcnR5XG5BIFJlYWN0SlMgRnJvbnRlbmQgLS0gU2VydmVyYXRpb24gY29tcGxldCBpbiB0aGUgaGFuZGxlIHdpdGggdGhlIGRhdGFCYXNlIFxuQmFzZSAtLT4gU2VydmVyYXRpb24gQ29tcGxldCBhbmQgQ2Fzc2FuZHJhIGRhdGFiYXNlIHByb3BlcnR5
+
 
