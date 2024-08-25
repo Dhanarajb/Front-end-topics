@@ -54,4 +54,5 @@ For our database, we use **Cassandra**. Cassandra stores all the data for our ap
 
 This architecture ensures that the application is responsive and efficiently handles user interactions, data processing, and storage.
 
+![Project Architecture Diagram](https://mermaid-js.github.io/mermaid-live-editor/#/edit/Z3JhcGggVERcbkF9IFJlYWN0SlMgRnJvbnRlbmQgfCB8IEEoVVNFUiBJbnRlcmFjdGlvbilbWmhPIFJlYWN0SlMgRnJvbnRlbmRdIFxuQiAtLT4gQyhjYXNhbmRyYSBkYXRhYmFzZSBhbmQgU2VydmVyYXRpb24gQ29tcGxldCBpbmZvKSBcblxuUCAtLT4gQmFzZSBhbmQgU2VydmVyYXRpb24gQ29tcGxldCBhbmQgQ2Fzc2FuZHJhIGRhdGFiYXNlIHByb3BlcnR5XG5BIFJlYWN0SlMgRnJvbnRlbmQgLS0gU2VydmVyYXRpb24gY29tcGxldCBpbiB0aGUgaGFuZGxlIHdpdGggdGhlIGRhdGFCYXNlIFxuQmFzZSAtLT4gU2VydmVyYXRpb24gQ29tcGxldCBhbmQgQ2Fzc2FuZHJhIGRhdGFiYXNlIHByb3BlcnR5
 
