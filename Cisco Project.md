@@ -239,6 +239,9 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 
 #### Question 5: What did you learn from this experience?
 **Answer:** "I learned that involving the whole team in decision-making and valuing everyone’s input can lead to better solutions and stronger team dynamics. It also taught me the importance of clear communication and compromise in overcoming conflicts."
+
+
+
 ----
 ## How do you keep up with the latest trends and technologies in front-end development?
 
