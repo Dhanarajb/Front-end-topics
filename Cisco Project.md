@@ -246,3 +246,11 @@ In a past project, our team disagreed on how to build a feature. I set up a meet
 ## How do you keep up with the latest trends and technologies in front-end development?
 
 **Answer:** "I regularly read blogs, follow industry leaders on social media, and participate in online communities like Stack Overflow and GitHub. I also attend webinars, conferences, and local meetups to stay updated on the latest trends and technologies. In my spare time, I experiment with new tools and frameworks in personal projects, which helps me understand their practical applications and potential impact on my work."
+
+
+---
+
+## How do you approach performance optimization in web applications?
+
+**Answer:** "I start by analyzing the application using tools like Lighthouse and Chrome DevTools to identify performance bottlenecks. Common areas I focus on include optimizing images, minimizing and bundling JavaScript and CSS, and implementing lazy loading for resources. I also ensure that the application follows best practices like reducing DOM size, optimizing rendering paths, and using efficient algorithms for data processing. When working with React, I leverage techniques like memoization and code-splitting to improve performance."
+
