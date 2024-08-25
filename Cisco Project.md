@@ -128,6 +128,37 @@ When a user navigates to the product catalog, Single SPA dynamically loads Micro
 
 Throughout this process, Single SPA manages the routing, ensures smooth transitions, and integrates all micro frontends into a unified experience, even if they use different technologies.
 <img width="741" alt="Screenshot 2024-08-25 at 1 07 30 PM" src="https://github.com/user-attachments/assets/c8bfa818-7213-415b-912d-2a5dc580eaef">
+---
+# Challenging Project: Cisco Spaces Dashboard
+
+## Project Overview
+One of the toughest projects I worked on was building a detailed dashboard for Cisco Spaces. The project required connecting to many different APIs, making sure the dashboard looked good on all devices, and handling a lot of data in React. We had some performance problems because of the large amount of data. To fix this, I used techniques to speed up the code and made the API calls more efficient. I also led code reviews to make sure the team was following good coding practices, which helped reduce bugs and made the code easier to manage.
+
+## Cross-Questions and Answers
+
+### What specific performance issues did you face?
+We had problems with the dashboard running slowly because it had to handle a lot of data at once.
+
+### How did memoization help with the performance issues?
+Memoization helped by storing the results of expensive calculations so they wouldn’t need to be done again, which sped up the dashboard.
+
+### Can you explain how optimizing API calls improved performance?
+I improved performance by making fewer API calls and combining them when possible, which reduced the amount of data being processed and made the dashboard faster.
+
+### What were the main challenges in ensuring the dashboard was responsive across devices?
+The main challenge was making sure the dashboard looked and worked well on different screen sizes and devices, which required careful design and testing.
+
+### How did leading code reviews help with the project?
+Leading code reviews helped by ensuring everyone followed good coding practices, which reduced bugs and made the code easier to maintain and understand.
+
+### What best practices did you focus on during code reviews?
+I focused on practices like writing clean code, following consistent naming conventions, and ensuring that the code was easy to understand and modify.
+
+### What was the most challenging aspect of managing complex state in React?
+Managing complex state was challenging because it involved keeping track of many different pieces of data and making sure they updated correctly across the dashboard.
+
+### How did you ensure the dashboard worked well across different devices?
+I tested the dashboard on various devices and screen sizes and used responsive design techniques to ensure it adjusted properly and looked good everywhere.
 
 
 
