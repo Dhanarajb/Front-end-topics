@@ -128,6 +128,11 @@ When a user navigates to the product catalog, Single SPA dynamically loads Micro
 
 
 <img width="741" alt="Screenshot 2024-08-25 at 1 07 30 PM" src="https://github.com/user-attachments/assets/c8bfa818-7213-415b-912d-2a5dc580eaef">
+
+
+
+
+
 ---
 # Challenging Project: Cisco Spaces Dashboard
 
