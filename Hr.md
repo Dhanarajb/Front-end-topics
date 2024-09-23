@@ -37,14 +37,17 @@
 
 ### Pitching for 17 LPA
 
-#### Reaffirm Your Value:
-"Given my 2.8 years of hands-on experience in front-end development and my track record of delivering projects that improve user experience, I believe a salary of 17 LPA is fair. I’ve consistently delivered high-quality work on time and to specification, which I believe will enable me to contribute significantly to Nuware Systems."
+**Reaffirm Your Value:**  
+"I have 2.8 years of solid experience in front-end development, where I’ve successfully delivered projects that improved user experience and met deadlines. Based on that, I feel 16 LPA is a fair salary for my skills and the value I can bring to MoveInSync."
 
-#### Market Research:
-"I’ve researched industry standards and found that 17 LPA aligns with the market rate for someone with my experience and skills. I believe this reflects the value I can bring to Nuware Systems, especially in driving key projects and delivering tangible results."
+**Market Research:**  
+"I’ve looked into the current market rates, and 16 LPA is in line with what someone with my experience typically earns. I’m confident that with my skills and proven track record, I’ll be able to contribute significantly to important projects and deliver great results for MoveInSync."
 
-#### Flexibility:
-"Of course, I’m open to discussing the overall compensation package, including benefits and other incentives, to ensure we reach a mutually beneficial agreement."
+**Flexibility:**  
+"Of course, I’m happy to discuss the entire compensation package, including other benefits, to make sure it works well for both of us."
+
+**If HR asks, ‘Why this salary?’**  
+"I’m asking for this salary because I’ve worked hard to build strong technical skills and have a history of delivering quality work. I’ve also kept up with industry standards and know that this is the typical pay for someone with my experience. I’m confident that I’ll deliver value that matches this compensation."
 
 # Questions to Ask HR
 
