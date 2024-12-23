@@ -1,10 +1,8 @@
-# Promises
+# Promises in JavaScript
 
-> Promises are used to handle async operations in JavaScript.
+Promises are used to handle asynchronous operations in JavaScript. Let’s explore how async operations worked before promises and how promises improve the experience.
 
-We will discuss with code example that how things used to work before `Promises` and then how it works after `Promises`
-
-Suppose, taking an example of E-Commerce
+## Example: E-Commerce
 
 ```js
 const cart = ["shoes", "pants", "kurta"];
@@ -12,130 +10,80 @@ const cart = ["shoes", "pants", "kurta"];
 // Below two functions are asynchronous and dependent on each other
 const orderId = createOrder(cart);
 proceedToPayment(orderId);
+```
 
-// with Callback (Before Promise)
-// Below here, it is the responsibility of createOrder function to first create the order then call the callback function
+### Before Promises (Using Callbacks)
+
+In this approach, it is the responsibility of the `createOrder` function to first create the order and then call the callback function.
+
+```js
 createOrder(cart, function () {
   proceedToPayment(orderId);
 });
-// Above there is the issue of `Inversion of Control`
+// This creates an issue of "Inversion of Control"
 ```
 
-Q: How to fix the above issue?  
-_A: Using Promise._
+### Fixing with Promises
 
-Now, we will make `createOrder` function return a promise and we will capture that `promise` into a `variable`
+Promises address the issue of inversion of control by allowing you to attach a callback function to a promise object.
 
-Promise is nothing but we can assume it to be empty object with some data value in it, and this data value will hold whatever this `createOrder` function will return.
+Now, let’s make `createOrder` return a promise. This promise acts as a placeholder for a future value, such as an `orderId` that will be available after the asynchronous operation completes.
 
-Since `createOrder` function is an async function and we don't know how much time will it take to finish execution.
-
-So the moment `createOrder` will get executed, it will return you a `undefined` value. Let's say after 5 secs execution finished so now `orderId` is ready so, it will fill the `undefined` value with the `orderId`.
-
-In short, When `createOrder` get executed, it immediately returns a `promise object` with `undefined` value. then javascript will continue to execute with other lines of code. After sometime when `createOrder` has finished execution and `orderId` is ready then that will `automatically` be assigned to our returned `promise` which was earlier `undefined`.
-
-Q: Question is how we will get to know `response` is ready?  
-_A: So, we will attach a `callback` function to the `promise object` using `then` to get triggered automatically when `result` is ready._
+#### Example with Promises
 
 ```js
 const cart = ["shoes", "pants", "kurta"];
 
 const promiseRef = createOrder(cart);
-// this promiseRef has access to `then`
 
-// {data: undefined}
-// Initially it will be undefined so below code won't trigger
-// After some time, when execution has finished and promiseRef has the data then automatically the below line will get triggered.
-
-promiseRef.then(function () {
+// Attach a callback to the promise
+promiseRef.then(function (orderId) {
   proceedToPayment(orderId);
 });
 ```
 
-Q: How it is better than callback approach?
+#### Why is this better?
 
-In Earlier solution we used to pass the function and then used to trust the function to execute the callback.
+In the earlier callback-based solution, we passed a function to `createOrder` and relied on it to execute the callback. With promises, we attach a callback function to a promise object. Promises guarantee that:
 
-But with promise, we are attaching a callback function to a promiseObject.
+1. The attached callback will be executed once the promise is fulfilled.
+2. The callback will only be called once.
 
-There is difference between these words, passing a function and attaching a function.
+### Understanding Promises
 
-Promise guarantee, it will callback the attached function once it has the fulfilled data. And it will call it only once. Just once.
+Promises are more than just objects with empty data. They have three key parts:
 
-Earlier we talked about promise are object with empty data but that's not entirely true, `Promise` are much more than that.
+1. **PromiseState**: Tracks the state of the promise ("Pending", "Fulfilled", or "Rejected").
+2. **PromiseResult**: Holds the value when the promise is fulfilled or rejected.
+3. **Prototype**: Contains methods like `.then` and `.catch`.
 
-Now let's understand and see a real promise object.
-
-fetch is a web-api which is utilized to make api call and it returns a promise.
-
-We will be calling public github api to fetch data
-https://api.github.com/users/alok722
+Here’s a real-world example using the `fetch` API to call a public GitHub API:
 
 ```js
-// We will be calling public github api to fetch data
 const URL = "https://api.github.com/users/alok722";
 const user = fetch(URL);
-// User above will be a promise.
+
 console.log(user); // Promise {<Pending>}
 
-/** OBSERVATIONS:
- * If we will deep dive and see, this `promise` object has 3 things
- * `prototype`, `promiseState` & `promiseResult`
- * & this `promiseResult` is the same data which we talked earlier as data
- * & initially `promiseResult` is `undefined`
- *
- * `promiseResult` will store data returned from API call
- * `promiseState` will tell in which state the promise is currently, initially it will be in `pending` state and later it will become `fulfilled`
- */
-
-/**
- * When above line is executed, `fetch` makes API call and return a `promise` instantly which is in `Pending` state and Javascript doesn't wait to get it `fulfilled`
- * And in next line it console out the `pending promise`.
- * NOTE: chrome browser has some in-consistency, the moment console happens it shows in pending state but if you will expand that it will show fulfilled because chrome updated the log when promise get fulfilled.
- * Once fulfilled data is there in promiseResult and it is inside body in ReadableStream format and there is a way to extract data.
- */
-```
-
-Now we can attach callback to above response?
-
-Using `.then`
-
-```js
-const URL = "https://api.github.com/users/alok722";
-const user = fetch(URL);
-
+// Attach a callback
 user.then(function (data) {
   console.log(data);
 });
-// And this is how Promise is used.
-// It guarantees that it could be resolved only once, either it could be `success` or `failure`
-/**
-    A Promise is in one of these states:
-
-    pending: initial state, neither fulfilled nor rejected.
-    fulfilled: meaning that the operation was completed successfully.
-    rejected: meaning that the operation failed.
- */
 ```
 
-💡Promise Object are immutable.  
--> Once promise is fulfilled and we have data we can pass here and there and we don't have to worry that someone can mutate that data. So over above we can't directly mutate `user` promise object, we will have to use `.then`
+### Key Observations
 
-### Interview Guide
+- Initially, the promise is in the “Pending” state.
+- Once fulfilled, the `PromiseResult` contains the data (e.g., API response).
+- Promises are immutable; you cannot directly modify the data.
 
-💡What is Promise?  
--> Promise object is a placeholder for certain period of time until we receive value from asynchronous operation.
+## Solving Callback Hell with Promises
 
--> A container for a future value.
+Callback hell (or the “Pyramid of Doom”) occurs when callbacks are nested deeply, making the code difficult to read and maintain.
 
--> **A Promise is an object representing the eventual completion or failure of an asynchronous operation.**
-
-We are now done solving one issue of callback i.e. Inversion of Control
-
-But there is one more issue, callback hell...
+### Callback Hell Example
 
 ```js
-// Callback Hell Example
 createOrder(cart, function (orderId) {
   proceedToPayment(orderId, function (paymentInf) {
     showOrderSummary(paymentInf, function (balance) {
@@ -143,26 +91,13 @@ createOrder(cart, function (orderId) {
     });
   });
 });
-// And now above code is expanding horizontally and this is called pyramid of doom.
-// Callback hell is ugly and hard to maintain.
+```
 
-// 💡 Promise fixes this issue too using `Promise Chaining`
-// Example Below is a Promise Chaining
-createOrder(cart)
-  .then(function (orderId) {
-    proceedToPayment(orderId);
-  })
-  .then(function (paymentInf) {
-    showOrderSummary(paymentInf);
-  })
-  .then(function (balance) {
-    updateWalletBalance(balance);
-  });
+### Promise Chaining
 
-// ⚠️ Common PitFall
-// We forget to return promise in Promise Chaining
-// The idea is promise/data returned from one .then become data for next .then
-// So,
+Promises allow chaining, where the output of one `.then` is passed as input to the next `.then`.
+
+```js
 createOrder(cart)
   .then(function (orderId) {
     return proceedToPayment(orderId);
@@ -173,9 +108,64 @@ createOrder(cart)
   .then(function (balance) {
     return updateWalletBalance(balance);
   });
-
-// To improve readability you can use arrow function instead of regular function
 ```
 
-<hr>
+### Common Pitfall
+
+One common mistake in promise chaining is forgetting to return a promise:
+
+```js
+createOrder(cart)
+  .then(function (orderId) {
+    proceedToPayment(orderId); // Missing return
+  })
+  .then(function (paymentInf) {
+    showOrderSummary(paymentInf); // Missing return
+  });
+```
+
+To fix this, always return the promise:
+
+```js
+createOrder(cart)
+  .then(function (orderId) {
+    return proceedToPayment(orderId);
+  })
+  .then(function (paymentInf) {
+    return showOrderSummary(paymentInf);
+  });
+```
+
+For better readability, you can use arrow functions:
+
+```js
+createOrder(cart)
+  .then(orderId => proceedToPayment(orderId))
+  .then(paymentInf => showOrderSummary(paymentInf))
+  .then(balance => updateWalletBalance(balance));
+```
+
+## Interview Guide
+
+### What is a Promise?
+
+- A **Promise** is an object representing the eventual completion or failure of an asynchronous operation.
+- It acts as a placeholder for a value that will be available in the future.
+
+### States of a Promise
+
+1. **Pending**: The initial state; neither fulfilled nor rejected.
+2. **Fulfilled**: The operation completed successfully.
+3. **Rejected**: The operation failed.
+
+### Benefits of Promises
+
+1. Solves the problem of inversion of control.
+2. Avoids callback hell using promise chaining.
+3. Guarantees immutability of resolved data.
+4. Ensures callback execution only once.
+
+---
+
+With promises, handling asynchronous operations becomes cleaner and more maintainable. This paves the way for even better approaches, such as `async/await`, which further simplify the syntax for working with promises.
 
