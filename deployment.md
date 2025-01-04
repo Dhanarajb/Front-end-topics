@@ -67,4 +67,36 @@ This document explains how code is shipped to production with reference to your 
   - Collaborating with QA for thorough testing.
   - Deploying features to production and monitoring them for stability.
 
-This document simplifies the journey from planning to production using your Cisco Spaces project as an example.
+-----
+
+```mermaid
+flowchart TD
+    A[Plan] --> B[Development]
+    B --> C[Build & Package]
+    C --> D[Test]
+    D --> E[Release]
+
+    subgraph Plan
+        A1[Create Stories in Jira] --> A2[Assign to Developers]
+    end
+
+    subgraph Development
+        B1[Implement Features] --> B2[Commit Code to GitHub]
+    end
+
+    subgraph Build & Package
+        C1[Run CI/CD Pipeline] --> C2[Validate Code Quality]
+        C2 --> C3[Store Build in Repository]
+    end
+
+    subgraph Test
+        D1[QA Testing] --> D2[UAT Testing]
+    end
+
+    subgraph Release
+        E1[Canary Deployment] --> E2[Full Deployment]
+        E2 --> E3[Monitoring & Alerts]
+    end
+```
+
+
